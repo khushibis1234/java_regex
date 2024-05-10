@@ -1,0 +1,66 @@
+1)five friends name 
+public class Main{
+    public static void main(String[] args){
+        System.out.println("Five friends name");
+        System.out.print(" Isha");
+        System.out.print(" Himani");
+        System.out.print(" Khushi");
+        System.out.print(" Bulbul");
+        System.out.print(" Naira");
+    }
+
+}
+
+
+2)five country name (new line)
+public class Main{
+    public static void main(String[] args){
+      System.out.println("Five Country names");
+      System.out.println(" India");
+      System.out.println(" Iraq");
+      System.out.println(" China");
+      System.out.println(" Pakistan");
+      System.out.println(" Iran");
+    }
+
+}
+
+
+3)five city name
+public class Main{
+    public static void main(String[] args){
+        System.out.println("Five City name");
+        System.out.print("Kolkata");
+        System.out.print(" Patna");
+        System.out.print(" Pune");
+        System.out.print(" Mumbai");
+        System.out.print(" Banglore");
+    }
+
+}
+
+4)five fav food name (new line)
+public class Main{
+    public static void main(String[] args){
+        System.out.println("Fav Food  name");
+        System.out.println(" Cold drink");
+        System.out.println(" Pizza");
+        System.out.println(" Burger");
+        System.out.println(" Chowmein");
+        System.out.println(" Momos");
+    }
+
+}
+
+5)five fruit name 
+public class Main{
+    public static void main(String[] args){
+        System.out.println("Fruit  name");
+        System.out.print(" Orange");
+        System.out.print(" Apple");
+        System.out.print(" Banana");
+        System.out.print(" Strawberry");
+        System.out.print(" Mango");
+    }
+
+}
