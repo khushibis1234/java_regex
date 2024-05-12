@@ -1,0 +1,231 @@
+one example print :
+
+primitive data type :
+1)integer
+public class Main{
+    public static void main(String[] args){
+        int a=70;
+        System.out.println(a);
+    }
+
+}
+
+2)char
+public class Main{
+    public static void main(String[] args){
+        char a='b';
+        System.out.println(a);
+    }
+
+}
+3)float
+public class Main{
+    public static void main(String[] args){
+        float a=0.7f;
+        System.out.println(a);
+    }
+
+}
+
+4)double
+public class Main{
+    public static void main(String[] args){
+        double a=69.7;
+        System.out.println("the double value is " +a);
+    }
+
+}
+5)Boolean
+public class Main{
+    public static void main(String[] args){
+        boolean  isTrue =true;
+        boolean  isFalse=false;
+
+
+        System.out.println("boolean is true:" +true);
+        System.out.println("boolean is false: " +false);
+    }
+
+}
+6)long
+public class Main{
+    public static void main(String[] args){
+        long a =900000;
+
+       System.out.println("value of long is" +a);
+
+    }
+
+}
+7)short
+public class Main{
+    public static void main(String[] args){
+        short myshort =1000;
+
+        System.out.println("value of short is" +myshort);
+
+    }
+
+}
+
+8)byte
+public class Main{
+    public static void main(String[] args){
+        byte myByte= 54;
+
+        System.out.println("value of byte is" + myByte);
+
+    }
+
+}
+
+
+--------------------------------------------------------------------
+34-5 
+public class Main{
+    public static void main(String[] args){
+        int a=34;
+        int b=5;
+        int c=a-b;
+
+        System.out.println("value of c is " + c);
+
+    }
+
+}
+
+--------------------------------------------------
+23*5 
+public class Main{
+    public static void main(String[] args){
+        int a=23;
+        int b=5;
+        int c=a*b;
+
+        System.out.println("value of c is " + c);
+
+    }
+
+}
+
+
+----------------------------------------
+56/2 
+public class Main{
+    public static void main(String[] args){
+        int a=56;
+        int b=2;
+        int c=a/b;
+
+        System.out.println("value of c is " + c);
+
+    }
+
+}
+
+-------------------------------------
+1+6+8+9
+public class Main{
+    public static void main(String[] args){
+        int a=1;
+        int b=6;
+        int c=8;
+        int d=9;
+        int e=a+b+c+D;
+
+        System.out.println("value of e is " + e);
+
+    }
+
+}
+
+-------------------------------------
+34+67+3+89+12
+public class Main{
+    public static void main(String[] args){
+        int a=34;
+        int b=67;
+        int c=3;
+        int d=89;
+        int e=12;
+        int f=a+b+c+d+e;
+
+        System.out.println(f);
+
+    }
+
+}
+------------------------------------------
+34+(4*4)-8
+public class Main{
+    public static void main(String[] args){
+        int a=34;
+        int b=4;
+        int c=4;
+        int d=8;
+        int e=a+(b*c)-d;
+        
+        System.out.println(e);
+
+    }
+
+}
+
+---------------------------------------------------------------
+3.1*6.7-(2.2*2.2)-5.4
+public class Main{
+    public static void main(String[] args){
+        float a=3.4f;
+        float b=6.7f;
+        float c=2.2f;
+        float d=2.2f;
+        float e=5.4f;
+        float f=a*b-(c*d)-e;
+
+        System.out.println(f);
+
+    }
+
+}
+---------------------------------------------------------------
+2.3-7+(3.4*6)-2.3/2
+public class Main{
+    public static void main(String[] args){
+        float a=2.3f;
+        int b=7;
+        float c=3.4f;
+        int d=6;
+        float e=2.3f;
+        int f=2;
+        float g=a*b-(c*d)-e;
+
+        System.out.println(f);
+
+    }
+
+}
+---------------------------------------------------------------
+23*2-9+34
+public class Main{
+    public static void main(String[] args){
+        
+        int a=23;
+        int b=2;
+        int c=9;
+        int d=34;
+
+        int e=a*b-c+d;
+        
+
+        System.out.println(e);
+
+    }
+
+}
+---------------------------------------------------------------
+
+
+
+
+
+
