@@ -1,0 +1,155 @@
+1)C program to find out whether a given year is a leap year or not:
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int year = sc.nextInt();
+        if (year % 4 == 0) {
+            System.out.println("leap year");
+        } else {
+            System.out.println("not leap year");
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------
+2)C program to convert temperature from Fahrenheit to Celsius and Celsius to Fahrenheit
+celsius 
+f---->c 
+fahrenheit
+c---f 
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter temp");
+        String temp=sc.nextLine();
+        if(temp.equals("celsius")){
+            System.out.println("enter the temp for celsius");
+            float a=sc.nextFloat();
+           float s=a* ((9/5) + 32);
+
+        }
+        else if(temp.equals("fehranite")){
+            System.out.println("enter the temp for fehranite");
+            float a=sc.nextFloat();
+            System.out.println("the value of tempin celsius"+(a-32)*5/9);
+        }
+    }
+}
+
+---------------------------------------------------------------
+3)Check whether the trainge , square , reactanlge (area & volume)
+->input area /volume 
+area 
+traingle square rectangle 
+square 
+------------------------------------------------------- 
+4)java program to check whether a character is an alphabet or not
+input =a =alpha 
+3 =this is a digit 
+------------------
+5) C program to enter student marks and find percentage and grade
+A college has the following rules for the grading system:
+5 marks (grade + %)
+1. Below 25 – F
+2. 25 to 45 – E
+3. 45 to 50 – D
+4. 50 to 60 – C
+5. 60 to 80 – B 
+6. Above 80 – A
+--------------------------------------------------
+6)Write a java program to accept the height of a person in centimeters and categorize the person according to their height.
+->meter ===>cm 
+mid 
+low 
+high 
+----------------------------------------------------
+7)Write a java program to read the roll no, name,fnname and marks of three subjects and calculate the total, percentage and division.
+Test Data :
+Input the Roll Number of the student :784
+student name : 
+fname:
+mname:
+address:
+contact:
+Input the marks of Physics, Chemistry and Computer Application : 70 80 90
+total: 
+precentage : % 
+division:
+-------------------------------------------
+8) 5 number input 
+>40 
+average 
+3. 45 to 50 – D
+4. 50 to 60 – C
+5. 60 to 80 – B
+6. Above 80 – A 
+otherwise fail 
+-------------------------------
+
+9)three number max used only if else 
+-----------------------------------------------
+
+----------------------------------------------------
+11) 
+salalry :
+holidays (1) =full salary 
+2-5 =5% 
+5-14 =10% 
+15 =50% 
+else =not salary 
+
+output : 
+name:
+address: 
+bank details: 
+salary : 
+alot :
+ holidays 
+-------------------------------------------
+12)
+electric city bill : 
+4 unit 
+40 
+1- 10 = 10% 
+11-20 =15% 
+21-40 =30% 
+50 =50% 
+
+output : 
+name:
+unit :3 
+amout 30 
+discout : 10% 
+total pay amount : 
+----------------------------------------------------
+13) 
+retailer 
+customer 
+retailer : 
+1-15 peices =15% 
+16-30 =30% 
+31-50 =50% 
+
+output : 
+reailer name :asish kumar 
+peicies : 30 
+discount : 
+
+customer  : 
+1000 to 2000 -10% 
+100-1000 -5% 
+2000--3000 =15% 
+3000< 30% 
+sout("---------------------");
+output : 
+customer name : 
+contact number : 
+payment : 
+discout : 
+total payment 
