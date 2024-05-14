@@ -1,0 +1,253 @@
+switch paractice questions :
+
+1)write a program to read a week day number and print weekday name using switch 
+eg 1 =>sunday 
+1 sunday 
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        switch (a) {
+            case 1: {
+                System.out.println("sunday");
+                break;
+            }
+            case 2: {
+                System.out.println("monday");
+                break;
+            }
+            case 3: {
+                System.out.println("tuesday");
+                break;
+            }
+            case 4: {
+                System.out.println("wednesday");
+                break;
+            }
+            case 5:{
+                System.out.println("thursday");
+                break;
+            }
+            case 6:{
+                System.out.println("friday");
+                break;
+            }
+            case 7: {
+                System.out.println("saturday");
+                break;
+            }
+
+
+        }
+    }
+}
+
+
+-----------------------------------------------------------------------
+2) 
+write a program to read gender (M/F) and print the corresponding gender using a switch statement 
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char a = sc.next().charAt(0);
+        switch (a) {
+            case 'm': {
+                System.out.println("male");
+                break;
+            }
+            case 'f': {
+                System.out.println("female");
+                break;
+            }
+
+        }
+    }
+}
+
+
+--------------------------------------------------------------------------
+3)
+write a program to check whether the number is even or odd 
+type1: 1 even number 
+2 :odd number 
+
+type2: e =>even number 
+o=>odd number 
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char a = sc.next().charAt(0);
+        switch (a) {
+            case 'e': {
+                int e = sc.nextInt();
+                if (e % 2 == 0) {
+                    System.out.println("even");
+                    break;
+                }
+            }
+            case 'o': {
+                int o = sc.nextInt();
+                if (o % 2 != 0) {
+                    System.out.println("odd");
+                    break;
+                }
+            }
+
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------
+4) 
+write a program to create a simple calculator 
+a b + 
+a+b 
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char a = sc.next().charAt(0);
+        switch (a) {
+            case '+': {
+                System.out.println(" number ");
+                int num = sc.nextInt();
+                System.out.println("enter num 1");
+                int num1 = sc.nextInt();
+                System.out.println(num + num1);
+                break;
+            }
+            case '-': {
+                System.out.println(" number ");
+                int num = sc.nextInt();
+                System.out.println("enter num 1");
+                int num1 = sc.nextInt();
+                System.out.println(num -num1);
+                break;
+            }
+            case '*':{
+                System.out.println(" number ");
+                int num=sc.nextInt();
+                System.out.println("enter num 1");
+                int num1=sc.nextInt();
+                System.out.println(num*num1);
+                break;
+            }
+            case '%':{
+                System.out.println(" number ");
+                int num=sc.nextInt();
+                System.out.println("enter num 1");
+                int num1=sc.nextInt();
+                System.out.println(num%num1);
+                break;
+            }
+            case '/':{
+                System.out.println(" number ");
+                int num=sc.nextInt();
+                System.out.println("enter num 1");
+                int num1=sc.nextInt();
+                System.out.println(num/num1);
+                break;
+            }
+
+        }
+    }
+}
+
+
+
+-----------------------------------------------------------------------------
+5) 
+write a program to check whether a person is eligible or not for vote 
+import java.sql.SQLOutput;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        switch (a) {
+            case 1: {
+                int b = sc.nextInt();
+                if (b > 18) {
+                    System.out.println("valid");
+                    break;
+                } else {
+                    System.out.println("not valid");
+                }
+            }
+        }
+    }
+}
+
+----------------------------------------------------------------------------------------------------
+6)
+write a program to check month ? 
+12 month 
+import java.sql.SQLOutput;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a= sc.nextInt();
+        switch(a){
+            case 1:{
+                System.out.println("january");
+                break;
+            }
+            case 2:{
+                System.out.println("february");
+                break;
+            }
+            case 3:{
+                System.out.println("march");
+                break;
+            }
+            case 4:{
+                System.out.println("april");
+                break;
+            }
+            case 5:{
+                System.out.println("may");
+                break;
+            }
+            case 6:{
+                System.out.println("june");
+                break;
+            }
+            case 7:{
+                System.out.println("july");
+                break;
+            }
+            case 8:{
+                System.out.println("august");
+                break;
+            }
+            case 9:{
+                System.out.println("september");
+                break;
+            }
+            case 10:{
+                System.out.println("october");
+                break;
+            }
+            case 11:{
+                System.out.println("november");
+                break;
+            }
+            case 12:{
+                System.out.println("december");
+                break;
+            }
+            }
+        }
+        }
+
+-------------------------------------------------------------------------------------------------

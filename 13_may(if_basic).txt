@@ -1,0 +1,322 @@
+1)voter id 
+=>user input 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+        if (age>=18){
+            System.out.println("valid");
+        }
+        else{
+            System.out.println("not valid");
+        }
+    }
+}
+
+2)one number max a>10 
+one number : 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if (a>=10){
+            System.out.println("a is maximum");
+        }
+        else{
+            System.out.println("not valid");
+        }
+    }
+}
+3)two number max a b 
+a ya b dono mey se bda konsa hey 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        if (a>b){
+            System.out.println("a is maximum");
+        }
+        else{
+            System.out.println("b is maximum");
+        }
+    }
+}
+---------------
+4)three number max a b c 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        if (a>b && a>c ){
+            System.out.println("a is maximum");
+        }
+        else if (b>a && b>c){
+            System.out.println("b is maximum");
+        }
+        else if(c>a && c>b){
+            System.out.println("c is maximum");
+        }
+    }
+}
+
+tenno mey se konsa badha hey 
+
+5)five number max abcde
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        int e = sc.nextInt();
+        if (a>b && a>c && a>d && a>e){
+            System.out.println("a is maximum");
+        }
+        else if (b>a && b>c && b>d && b>e){
+            System.out.println("b is maximum");
+        }
+        else if(c>a && c>b && c>d && c>e){
+            System.out.println("c is maximum");
+        }
+        else if(d>a && d>b && d>c && d>e){
+            System.out.println("d is maximum");
+        }
+        else if(e>a && e>b && e>c && e>d){
+            System.out.println("e is maximum");
+        }
+    }
+}
+
+6) user 
+-9 negative integer 
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if (a < 0) {
+            System.out.println("negative");
+        }
+    }
+}
+5 positive integer 
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if (a > 0) {
+            System.out.println("positive");
+        }
+    }
+}
+
+
+7) vowel and consonat 
+->a e i o u vowel 
+consonant 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char ch = sc.next().charAt(0);
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o') {
+            System.out.println("vowel");
+        } else {
+            System.out.println("consonent");
+        }
+    }
+}
+
+8)divisible 5 and 11 
+	a)num dono se divide ho jb process ho import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if (n%5==0 && n%11==0){
+            System.out.println("yes ");
+        }
+    }
+}
+	b)num kisi se bhi divide ho jb process ho 
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if (n%5==0 || n%11==0){
+            System.out.println("yes ");
+        }
+    }
+}
+9)uper case and lower case input by user 
+A k
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        if (ch== 'q' || ch=='w' || ch=='e' || ch=='r' || ch=='t' || ch=='y' || ch=='u' || ch=='i' || ch=='o' ) {
+            System.out.println("upper case");
+        }
+        else if(ch =='z' || ch=='x'|| ch=='c'|| ch=='v' || ch=='b' || ch=='n' || ch=='m'  ) {
+            System.out.println("lower case");
+        }
+
+    }
+}
+
+
+10)if the inpute is the integer then check ,check number 7 or 3 k multiple se divisible hey kya 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if (n%7==0 && n%3==0){
+            System.out.println("yes ");
+        }
+    }
+}
+
+
+11)number swap (three ways )
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        a = b;
+        b = c;
+        c = a;
+        System.out.println("swap value of a is" + a);
+        System.out.println("swap value of b is" + b);
+
+    }
+}
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        a = a-b;
+        b = a+b;
+        a = a+b;
+        System.out.println("swap value of a is" + a);
+        System.out.println("swap value of b is" + b);
+
+    }
+}
+
+12)m =you are 
+f = female 
+other 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        if (ch== 'm' ) {
+            System.out.println("male");
+        }
+        else if(ch =='f') {
+            System.out.println("female");
+        }
+
+    }
+}
+
+13) 
+number (WEEK DAYS)
+1 =>sunday 
+2 =>monday 
+3 =>tuesday 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        if (n == 1 ) {
+            System.out.println("sunday");
+        }
+        else if(n==2) {
+            System.out.println("monday");
+        }
+        else if(n==3) {
+            System.out.println("tuesday");
+        }
+        else if(n==4) {
+            System.out.println("wednesday");
+        }
+        else if(n==5) {
+            System.out.println("thursday");
+
+        }
+        else if(n==6) {
+            System.out.println("friday");
+        }
+        else if(n==7) {
+            System.out.println("saturday");
+        }
+    }
+}
+
+14 )user number 
+check number :even odd 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        if(a%2==0){
+            System.out.println("even");
+        }
+
+    else {
+        System.out.println("odd");
+        }
+    }
+}
+
+15)
+char match 
+a =>apple 
+b :ball 
+c :cat 
+not match 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char ch = sc.next().charAt(0);
+        if (ch == 'a' ) {
+            System.out.println("apple");
+        }
+        else if(ch=='b') {
+            System.out.println("ball");
+        }
+        else if(ch=='c') {
+            System.out.println("cat");
+        }
+        else {
+            System.out.println("not match");
+        }
+    }
+}
+-----------------------------------------------------------------
