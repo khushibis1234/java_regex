@@ -1,0 +1,202 @@
+1)voter id 
+=>user input 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+        int age=sc.nextInt();
+        String name = (age > 18) ? "elidigible":"not";
+                
+            System.out.println(name);
+        }
+    }
+
+
+2)one number max a>10 
+one number : 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+        int a=sc.nextInt();
+        String name = (a > 10) ? "a is max";
+            System.out.println(name);
+        }
+    }
+
+
+3)two number max a b 
+a ya b dono mey se bda konsa hey 
+public class Main {
+    public static void main(String[] args) {
+
+        int a = 4, b = 5, c = 2;
+        String name = (a > b && a > c) ? "a is max" :"b is max";
+            System.out.println(name);
+        }
+    }
+
+
+4)three number max a b c 
+tenno mey se konsa badha hey 
+public class Main {
+    public static void main(String[] args) {
+
+        int a = 4, b = 5, c = 2;
+        String name = (a > b && a > c) ? "a is max" : (b > a && b > c) ? "b is max" :"c is max";
+            System.out.println(name);
+        }
+    }
+
+
+5)five number max abcde
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+        int a=2,b=5,c=7,d=9,e=1;
+        String name = (a>b && a>c && a>d && a>e)?"a is max":( b>a && b>c && b>d && b>e)?"b is max":( c>a && c>b && c>d && c>e )?"c is max":( d>a && d>b && d>c && d>e)? "d is max": (e>a && e>b && e> c && e>d)? "e is max" :  "";
+
+            System.out.println(name);
+        }
+    }
+
+
+6) user 
+-9 negative integer 
+5 positive integer 
+0 =zero 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+        int a=sc.nextInt();
+        String name = (a<0)?"negative": (a>0)?"positive" : "zero";
+
+            System.out.println(name);
+        }
+    }
+
+
+
+7) vowel and consonat 
+->a e i o u vowel 
+consonant 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        String name = (ch=='a' || ch=='e'|| ch=='i' || ch=='o' ||ch=='u')?"vowel":  "consonent";
+
+            System.out.println(name);
+        }
+    }
+
+
+
+8)divisible 5 and 11 
+	a)num dono se divide ho jb process ho 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+        int a=sc.nextInt();
+        String name = (a%5==0 || a%11==0)?"yes":"no";
+
+            System.out.println(name);
+        }
+    }
+
+
+	b)num kisi se bhi divide ho jb process ho 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+        int a=sc.nextInt();
+        String name = (a%5==0 && a%11==0)?"yes":"no";
+
+            System.out.println(name);
+        }
+    }
+
+
+
+
+
+m =you are 
+f = female 
+other
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        String name = (ch=='f')?"feamle":(ch=='m')?"male" :"other";
+
+            System.out.println(name);
+        }
+    }
+
+
+
+number 
+1 =>sunday 
+2 =>monday 
+3 =>tuesday 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+       int a=sc.nextInt();
+        String name = (a==1)?"monday": (a==2)?"tuesday": (a==3)?"wednesday": " ";
+
+            System.out.println(name);
+        }
+    }
+
+
+
+
+ser number 
+check number :even odd import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+       int a=sc.nextInt();
+        String name = (a%2==0)?"even": (a%2!=0)?"odd": " ";
+
+            System.out.println(name);
+        }
+    }
+
+
+
+char match 
+a =>apple 
+b :ball 
+c :cat 
+not match 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        String name = (ch=='a')?"apple":(ch=='b')?"ball" :(ch=='c')?"cat":"not match ";
+
+            System.out.println(name);
+        }
+    }
+
