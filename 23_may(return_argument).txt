@@ -1,0 +1,712 @@
+int | char | String | float :return and argument
+
+public class Main{
+    int show1(int a){
+        return a;
+    }
+    char show2(char a){
+        return a;
+    }
+    String show3(String name){
+        return name;
+    }
+
+    float show4(float a){
+        return a;
+    }
+    public static void main(String[] args){
+        Main p=new Main();
+        System.out.println(p.show1(34));
+        System.out.println(p.show2('m'));
+        System.out.println(p.show3("mohit"));
+        System.out.println(p.show4((2.3f));
+        }
+    }
+covariant type :print 
+
+------------------------------------------------------
+ return and  argument : 
+class A :
+add() :two number addition
+sub() :two number subs
+div() :two number div
+multi() :two number multiplication
+mod() :two number modular 
+
+class Main :
+covraint return type : 
+
+main() :
+all method call
+import  java.util.*;
+
+class A{
+    int add( int c){
+        System.out.println(c);
+        return  c;
+    }
+    int sub(int d){
+        System.out.println(d);
+        return d;
+    }
+    int divi(int e){
+        System.out.println(e);
+        return e;
+    }
+    int mul(int f){
+        System.out.println(f);
+        return f;
+    }
+    int mod(int g){
+        System.out.println(g);
+        return g;
+    }
+
+}
+
+public class Main {
+
+    Main add1(int c) {
+        System.out.println("cov");
+        System.out.println(c);
+        return this;
+    }
+    Main sub1(int d){
+        System.out.println("cov");
+        System.out.println(d);
+        return this;
+    }
+    Main divi1(int e) {
+        System.out.println("cov");
+        System.out.println(e);
+        return this;
+    }
+    Main mul1(int f) {
+        System.out.println("cov");
+        System.out.println(f);
+        return this;
+    }
+    Main mod1(int g) {
+        System.out.println("cov");
+        System.out.println(g);
+        return this;
+    }
+
+
+    public static void main( String[] args ){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter he value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a+b;
+        int d=a-b;
+        int e=a/b;
+        int f=a*b;
+        int g=a%b;
+
+
+        A k = new A();
+        k.add(c);
+        k.sub(d);
+        k.divi(e);
+        k.mul(f);
+        k.mod(g);
+        Main p=new Main();
+        p.add1(c);
+        p.sub1(d);
+        p.divi1(e);
+        p.mul1(f);
+        p.mod1(g);
+
+
+    }
+}
+
+
+------------------
+ return and  argument 
+class A :
+add() :two number addition
+covraint return type : 
+
+class B
+sub() :two number subs
+covraint return type : 
+
+class C
+div() :two number div
+covraint return type : 
+
+class D
+multi() :two number multiplication
+covraint return type : 
+
+class E 
+mod() :two number modular 
+covraint return type : 
+
+
+class Main :
+covraint return type : 
+
+main() :
+all method call 
+import java.sql.SQLOutput;
+import  java.util.*;
+
+class A {
+    int add(int c) {
+        System.out.println(c);
+        return c;
+    }
+
+    A add1(int c){
+        System.out.print("cov "+ c);
+        return  this;
+    }
+}
+class B{
+    int sub(int d) {
+        System.out.println(d);
+        return d;
+    }
+
+    B sub1(int d){
+        System.out.print("cov "+ d);
+        return this;
+
+    }
+}
+class C{
+    int divi(int e) {
+        System.out.println(e);
+        return e;
+    }
+
+    C divi1(int e){
+        System.out.print("cov"+ e);
+        return this;
+
+    }
+}
+class D{
+    int mul(int f) {
+        System.out.println(f);
+        return f;
+    }
+
+    D mul1(int f){
+        System.out.print("cov"+ f);
+        return this;
+
+    }
+}
+class E{
+    int modul(int g) {
+        System.out.println(g);
+        return g;
+    }
+
+    E modul1(int g){
+        System.out.print("cov"+ g);
+        return this;
+
+    }
+}
+
+
+
+
+
+public class Main {
+
+    Main add2(int c) {
+        System.out.println("cov");
+        System.out.println(c);
+        return this;
+    }
+
+
+
+    public static void main( String[] args ){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter he value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a+b;
+        int d=a-b;
+        int e=a/b;
+        int f=a*b;
+        int g=a%b;
+
+
+        A k = new A();
+        k.add(c);
+        k.add1(c);
+        B l=new B();
+        l.sub(d);
+        l.sub1(d);
+        C m=new C();
+        m.divi(e);
+        m.divi1(e);
+
+        D n=new D();
+        n.mul(f);
+        n.mul1(f);
+
+        E v=new E();
+        v.modul(g);
+        v.modul1(g);
+
+        Main p=new Main();
+        p.add2(c);
+
+    }
+}
+
+
+-----------------------------------------------------------------
+ return and  argument 
+class A 
+even even method call ho (1--->100 even number)
+odd odd method call (check odd number ) 
+palindrome (palindrome)
+reverse (check reverse) 
+Armstrong (Armstrong)
+add (two number addition )
+sub (two number substraction)
+multi (two number multiply )
+
+class Main 
+main() :access 
+
+
+
+import java.util.Scanner;
+
+class A {
+    int even(int a){
+        for(int i = a; i<=100; i++){
+            if(i%2==0){
+                System.out.println(i);
+            }
+        }
+        return a;
+    }
+    int odd(int a){
+        for(int i = a; i<=100; i++){
+            if(i%2==1){
+                System.out.println(i);
+            }
+        }
+        return a;
+    }
+    int palindrome(int a){
+        int temp =a,rem, sum=0;
+        while(a>0){
+            rem = a%10;
+            sum = sum*10+rem;
+            a = a/10;
+
+        }if(sum==temp){
+            System.out.println("palindrome");
+        }else{
+            System.out.println("not palindrome");
+        }
+        return (0);
+    }
+    int reverse(int a){
+        int temp =a, rem,sum=0;
+        while(a>0){
+            rem = a%10;
+            sum = sum*10+rem;
+            a = a/10;
+
+        }if(sum==temp){
+            System.out.println("reverse");
+        }else{
+            System.out.println("not reverse");
+        }
+        return (0);
+    }
+    int armstrong(int a){
+        int temp =a, rem, sum=0;
+        while(a>0){
+            rem = a%10;
+            sum = sum+rem*rem*rem;
+            a = a/10;
+
+        }if(sum==temp){
+            System.out.println("armstrong");
+        }else{
+            System.out.println("not armstrong");
+        }
+        return (0);
+    }
+    int add(int a, int b) {
+        int c = a + b;
+        return c;
+    }
+    int sub(int a, int b) {
+        int c = a - b;
+        return c;
+    }
+    int multi(int a, int b) {
+        int c=a*b;
+        return c;
+    }
+
+}
+
+public class Main {
+    Main show( int a){
+        System.out.println(a);
+        return this;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("choose 'even,'odd','palindrome','reverse','armstrong','add','sub,'multi'");
+        String name = sc.nextLine();
+        A p = new A();
+        if(name.equals("even")){
+            System.out.println("enter the value of a");
+            int a = sc.nextInt();
+            System.out.println(p.even(a));
+        }
+        else if(name.equals("odd")){
+            System.out.println("enter the value of a");
+            int a = sc.nextInt();
+            System.out.println(p.odd(a));
+        }
+        else if(name.equals("palindrome")){
+            System.out.println("enter the value of a");
+            int a = sc.nextInt();
+            System.out.println(p.palindrome(a));
+        }
+        else if(name.equals("reverse")){
+            System.out.println("enter the value of a");
+            int a = sc.nextInt();
+            System.out.println(p.reverse(a));
+        }
+        else if(name.equals("armstrong")){
+            System.out.println("enter the value of a");
+            int a = sc.nextInt();
+            System.out.println(p.armstrong(a));
+        }
+        else if(name.equals("add")){
+            System.out.println("enter the value of a");
+            int a = sc.nextInt();
+            System.out.println("enter the value of b");
+            int b = sc.nextInt();
+            System.out.println(p.add(a,b));
+        }
+        else if(name.equals("sub")){
+            System.out.println("enter the value of a");
+            int a = sc.nextInt();
+            System.out.println("enter the value of b");
+            int b = sc.nextInt();
+            System.out.println(p.sub(a,b));
+        }
+        else if(name.equals("multi")){
+            System.out.println("enter the value of a");
+            int a = sc.nextInt();
+            System.out.println("enter the value of b");
+            int b = sc.nextInt();
+            System.out.println(p.multi(a,b));
+        }
+
+    }
+}
+
+-----------------------------------------------------------------
+class A
+method1 : no return and no argument 
+method2 : no return and no argument 
+
+class B
+method3 
+	call method1
+	call method2 
+
+
+class Main 
+main method 
+method3
+import java.util.Scanner;
+class A{
+    void method1(){
+        Scanner sc=new Scanner(System.in);
+            System.out.println("enter the value of a");
+            int a=sc.nextInt();
+            System.out.println("enter the value of b");
+            int b=sc.nextInt();
+            int c=a+b;
+            System.out.println(c);
+            
+        }
+        void method2(){
+         Scanner sc=new Scanner(System.in);
+            System.out.println("enter the value of e");
+            int e=sc.nextInt();
+            System.out.println("enter the value of f");
+            int f=sc.nextInt();
+            int g=e-f;
+            System.out.println(g);
+        }   
+        }
+
+
+class B{
+    void method3(){
+        A q=new A();
+        q.method1();
+        q.method2();
+    }
+}
+
+public class Methods{
+    public static void main(String[] args){
+        B k=new B();
+        k.method3();
+    }
+}
+-----------------------------------------------------------------
+class A
+method1 :  return and no argument 
+method2 : return and no argument 
+
+class B
+method3 
+	call method1
+	call method2 
+
+
+class Main 
+main method 
+method3
+import java.util.Scanner;
+class A {
+    int method1() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter  the value of a");
+        int a = sc.nextInt();
+        System.out.println("Enter  the value of b");
+        int b = sc.nextInt();
+        int c = a + b;
+        System.out.println(c);
+      return c;
+    }
+    int method2 (){
+        int a=20;
+        int b=20;
+        int c = a-b;
+        System.out.println(c);
+        return c;
+    }
+}
+class B {
+    int method3() {
+        A q = new A();
+        q.method1();
+        q.method2();
+        return (0);
+    }
+}
+public class Methods {
+    public static void main(String[] args) {
+     B w = new B();
+     w.method3();
+
+    }
+}
+-----------------------------------------------------------------
+class A
+method1 : no return and  argument 
+method2 : no return and  argument 
+
+class B
+method3 
+	call method1
+	call method2 
+
+
+class Main 
+main method 
+method3
+import java.util.Scanner;
+class A{
+    void method1(int a,int b){
+        int c=a+b;
+        System.out.println(c);
+    }
+    void method2(int a,int b){
+        int c=a-b;
+        System.out.println(c);
+    }
+    
+}
+class B{
+    void method3(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value ofn a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        
+        A q=new A();
+        q.method1(a,b);
+        q.method2(20,20);
+    }
+}
+public class Methods{
+    public static void main(String[] args){
+         Scanner sc=new Scanner(System.in);
+        System.out.println("enter the va;lue ofn a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        
+         B w=new B();
+         w.method3();
+}
+}
+
+
+-----------------------------------------------------------------
+class A
+method1 :  return and argument :int 
+method2 :  return and  argument :covariant 
+
+class B
+method3 
+	call method1
+	call method2 
+
+
+class Main 
+main method 
+method3
+import java.util.Scanner;
+class A{
+    void method1(int a,int b){
+        int c=a+b;
+        return ;
+    }
+    void method2(int a,int b){
+        int c=a-b;
+        return c;
+    }
+    
+}
+class B{
+    void method3(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value ofn a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        
+        A q=new A();
+        q.method1(a,b);
+        q.method2(20,20);
+        return (0);
+    }
+}
+public class Methods{
+    public static void main(String[] args){
+        
+         B w=new B();
+         w.method3();
+}
+}
+
+
+------------------------------------------------------------------
+class A
+method1 : no return and no argument 
+method6 : B class ka object bna kr call krna hey 
+
+class B
+method2: no return and  argument 
+
+class C
+method3:  return and no argument 
+method8 : A class ka object bna kr call krna hey :method1 and method 6 
+
+class D
+method4: no return and  argument 
+method9 :C class ka object bna kr call krna hey :method3 and method 8 
+
+class Main 
+
+main method : 
+
+D ko call krna hey import java.util.Scanner;
+claas A{
+    void method1(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println(c);
+    }
+    void method6(){
+        B q=new B();
+        q.methods2(50);
+    }
+}
+class B{
+    void method2(int a){
+        System.out.println(a){
+    }
+}
+class c{
+    int method3(){
+        int a=20,b=30;
+        int c=a/b;
+        return c;
+    }
+    int method8(){
+        A x=new A();
+        x.method6();
+        x.method1();
+        return(0);
+    }
+}
+
+
+    class D {
+
+    void mothod4 (int a, int b) {
+        int c = a % b;
+        System.out.println(c);
+    }
+    void method9(){
+        C k = new C();
+        System.out.println(k.method3());
+        System.out.println(k.method8());
+    }
+}
+
+
+public class Methods {
+
+    public static void main(String[] args) {
+     D z = new D();
+     z.mothod4(20,20);
+     z.method9();
+
+
+    }
+}
+}
+
+
+
+
+
