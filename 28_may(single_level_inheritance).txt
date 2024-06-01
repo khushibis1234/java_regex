@@ -1,0 +1,447 @@
+single level inheritance 
+
+class A 
+method1 :hello world 
+
+class B 
+method2 :hii how are you 
+
+class Main 
+main method :access 
+class A{
+    void method1(){
+        System.out.println("hello world");
+    }
+}
+class B extends A{
+    void method2(){
+        System.out.println("hii how are u");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        B k=new B();
+        k.method1();
+        k.method2();
+        
+    }
+}
+-------------------------------------------
+single level inheritance 
+
+class A 
+add() :no return and no argument 
+sub() :no return and  argument 
+
+class B 
+div() : return and no argument 
+multi() : return and  argument 
+
+class Main 
+main method :access 
+child class k through all methods access 
+import java.util.Scanner;
+class A{
+    void add(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println(c);
+    }
+    void sub(int a,int b){
+        int c=a+b;
+        System.out.println(c);
+    }
+
+}
+class B extends A{
+    int div(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b");
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println(c);
+        return c;
+    }
+    int multi(int a,int b){
+        int c=a*b;
+        System.out.println(c);
+        return c;
+    }
+}
+public class Main{
+public static void main(String[] args){
+    B k=new B();
+    k.add();
+    k.sub();
+    k.div();
+    k.mult();
+}
+}
+--------------------------------------------------------
+single level inheritance 
+
+class A 
+add() :getter and setter
+sub() :getter and setter
+
+class B 
+div() : getter and setter
+multi() : getter and setter
+
+class Main 
+main method :access 
+child class k through all methods access 
+import java.util.*;
+class A{
+    private int a;
+    private int b;
+    void setA(int a,int b){
+        this.a = a;
+        this.b = b;
+    }
+    int getA(){
+        return a;
+    }
+    int getA1(){
+        return b;
+    }
+    void add(){
+        int c = a+b;
+        System.out.println(c);
+    }
+    void sub(){
+        int c = a-b;
+        System.out.println(c);
+    }
+}
+class B extends A{
+    private int a;
+    private int b;
+    void setB(int a,int b){
+        this.a=a;
+        this.b=b;
+    }
+    int getB(){
+        return a;
+    }
+    int getB1(){
+        return b;
+    }
+    void mul(){
+        int c = a*b;
+        System.out.println(c);
+    }
+    void divi(){
+        int c = a/b;
+        System.out.println(c);
+    }
+}
+
+
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a = sc.nextInt();
+        System.out.println("enter the value of b");
+        int b = sc.nextInt();
+        B p = new B();
+        p.setA(a,b);
+        System.out.println(p.getA());
+        System.out.println(p.getA1());
+        p.add();
+        p.sub();
+        p.setB(a,b);
+        System.out.println(p.getB());
+        System.out.println(p.getB1());
+
+        p.mul();
+        p.divi();
+    }
+}
+
+----------------------------------------------------------
+single level inheritance 
+Student :class  getter and setter
+
+name
+fname
+mname
+class
+year
+address
+number
+bloodgroup 
+
+Employe :class  getter and setter
+
+empname
+id
+empfname
+empmname
+company
+salary 
+import java.util.*;
+class Student {
+    private String sname;
+    private String fname;
+    private String mname;
+    private int sclass;
+    private int year;
+    private String address;
+    private int number;
+    private String bloodgroup;
+
+    void setA(String sname, String fname, String mname, int sclass, String address, int number, String bloodgroup) {
+        this.sname = sname;
+        this.fname = fname;
+        this.mname = mname;
+        this.sclass = sclass;
+        this.year = year;
+        this.address = address;
+        this.number = number;
+        this.bloodgroup=bloodgroup;
+    }
+
+    String getA() {
+        return sname;
+    }
+
+    String getA1() {
+        return fname;
+    }
+
+    String getA2() {
+        return mname;
+    }
+
+    int getA3() {
+        return sclass;
+    }
+
+    int getA4() {
+        return year;
+    }
+
+    String getA5() {
+        return address;
+    }
+
+    int getA6() {
+        return number;
+    }
+
+    String getA7() {
+        return bloodgroup;
+    }
+}
+    class Employee extends Student{
+        private String empname;
+        private String empfname;
+        private String empmname;
+        private int id;
+        private float salary;
+        private String company;
+        void setB(String empname,String empfname,String empmname, int id, float salary, String company) {
+            this.empname = empname;
+            this.empfname = empfname;
+            this.empmname = empmname;
+            this.id = id;
+            this.salary = salary;
+            this.company = company;
+        }
+        String getB(){
+            return empname;
+        }
+        String getB1(){
+            return empfname;
+        }
+        String getB2(){
+            return empmname;
+        }
+        int getB3(){
+            return id;
+        }
+        float getB4(){
+            return salary;
+        }
+        String getB5(){
+            return company;
+        }
+    }
+    
+    public class main {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("enter the sname");
+            String sname = sc.nextLine();
+            System.out.println("enter the fname");
+            String fname = sc.nextLine();
+            System.out.println("enter the mname");
+            String mname = sc.nextLine();
+            System.out.println("enter the sclass");
+            int sclass = sc.nextInt();
+            System.out.println("enter the year");
+            int year = sc.nextInt();
+            System.out.println("enter the adress");
+            String address = sc.nextLine();
+            System.out.println("enter the number");
+            int number = sc.nextInt();
+            System.out.println("enter the bloddgroup");
+            String adress = sc.nextLine();
+            System.out.println("empname");
+            String empname = sc.nextLine();
+            System.out.println("empfname");
+            String empfname = sc.nextLine();
+            System.out.println("empmname");
+            String empmname = sc.nextLine();
+            System.out.println("id");
+            int id = sc.nextInt();
+            System.out.println("salary");
+            float salary = sc.nextFloat();
+            System.out.println("enter the company");
+            String company = sc.nextLine();
+            Employee p = new Employee();
+            p.setA(sname, fname, mname, year, adress, number, bloodgroup);
+            System.out.println((p.getA()));
+            System.out.println((p.getA1()));
+            System.out.println((p.getA2()));
+            System.out.println((p.getA3()));
+            System.out.println((p.getA4()));
+            System.out.println((p.getA5()));
+            System.out.println((p.getA6()));
+            p.setB(empname, empfname, empmname, id, salary, company);
+            System.out.println(p.getB());
+            System.out.println(p.getB1());
+            System.out.println(p.getB2());
+            System.out.println(p.getB3());
+            System.out.println(p.getB4());
+
+
+            System.out.println(p.getB5());
+
+
+        }
+    }
+
+
+
+------------------
+single level inheritance :
+
+Mobile :oppo realme oneplus apple  getter and setter
+
+
+Amazon :shirt jeans shoes watch  getter and setter
+import java.util.*;
+class Mobile {
+    private int oppo;
+    private int realme;
+    private int oneplus;
+    private int apple;
+
+    void setA(int oppo,int realme,int oneplus,int apple) {
+        this.oppo=oppo;
+        this.realme=realme;
+        this.oneplus=oneplus;
+        this.apple=apple;
+       
+    }
+    int getA() {
+        return oppo;
+    }
+
+    int getA1() {
+        return realme;
+    }
+
+    int getA2() {
+        return oneplus;
+    }
+
+    int getA3() {
+        return apple;
+    }
+
+   
+    class Amazon extends Mobile{
+        private int shirt;
+        private int jeans;
+        private int shoes;
+        private int watch;
+        void setB(int shirt.int jeans,int shoes,int watch) {
+            this.shirt=shirt;
+            this.jeans=jeans;
+            this.shoes=shoes;
+            this.watch=watch;
+            
+            }
+        int getB(){
+            return shirt;
+        }
+        int getB1(){
+            return jeans;
+        }
+        int getB2(){
+            return shoes;
+        }
+        int getB3(){
+            return watch;
+        }
+}
+    
+    public class main {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("enter the oppo");
+            int oppo = sc.nextInt();
+            System.out.println("enter the realme");
+            int oppo = sc.nextInt();
+            System.out.println("enter the oneplus");
+            int oneplus = sc.nextInt();
+            System.out.println("enter the apple");
+            int apple = sc.nextInt();
+            
+           
+            
+            System.out.println("shirt");
+            Int shirt = sc.nextInt();
+            System.out.println("jeans");
+            int jeans = sc.nextInt();
+            System.out.println("shoes");
+            int shoes = sc.nextInt();
+            System.out.println("watch");
+            int watch = sc.nextInt();
+            
+
+            Amazon p = new Amazon();
+
+
+            p.setA(oppo,realme,oneplus,apple);
+            System.out.println((p.getA()));
+            System.out.println((p.getA1()));
+            System.out.println((p.getA2()));
+            System.out.println((p.getA3()));
+            
+            p.setB(shirt, jeans, shoes, watch);
+            System.out.println(p.getB());
+            System.out.println(p.getB1());
+            System.out.println(p.getB2());
+            System.out.println(p.getB3());
+            
+
+            System.out.println(p.getB5());
+
+
+        }
+    }
+
+
+--------------------------------------------------
