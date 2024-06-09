@@ -1,0 +1,327 @@
+method overloading 
+
+five methods same name 
+addition
+substraction
+multi
+div 
+modu
+
+error
+problem solve 
+import java.util.Scanner;
+class A{
+void show(){
+    int a = 2;
+    int b = 3;
+    int c=a+b;
+    System.out.println(c);
+}
+void show(int a){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter value of a"+a);
+    System.out.println("enter value of b");
+    int b=sc.nextInt();
+    int c=a-b;
+
+    System.out.println(c);
+
+}
+float show(float a,float b){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter value of a");
+    System.out.println("enter value of b");
+    float c=a*b;
+    System.out.println(c);
+    return c;
+}
+void show(long a,long b){
+
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter value of a");
+    System.out.println("enter value of b");
+    long c=a/b;
+    System.out.println(c);
+}
+float show(float a){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter value of b");
+    int b=sc.nextInt();
+    float c=a%b;
+    System.out.println(c);
+return c;
+}
+}
+public class Main{
+    public static void main(String[] args){
+        A p = new A();
+        p.show();
+        p.show();
+        System.out.println(p.show(20.2f,20.2f));
+        p.show(20,20);
+        System.out.println(p.show(20f));
+
+
+    }
+}
+
+--------------------------------------------------
+method overloading 
+
+five methods same name but return type of method will be changed  
+addition
+substraction
+multi
+div 
+modu
+
+error
+problem solve 
+
+import java.util.*;
+class A{
+   void show(){
+   Scanner sc=new Scanner (System.in);
+       System.out.println("enter the value of a");
+       int a=sc.nextInt();
+       System.out.println("enter the value of b");
+       int b=sc.nextInt();
+       int c=a+b;
+       System.out.println(c);
+   }
+   int show(int a,int b){
+       int c=a-b;
+       return c;
+   }
+   float show(float a,float b){
+       float c=a*b;
+       return c;
+   }
+   double show(double a,double b){
+       double c=a/b;
+       return c;
+   }
+   long show(long a,long b){
+       long c=a%b;
+       return c;
+   }
+}
+public class Main{
+    public static void main(String[] args){
+        A a= new A();
+        a.show();
+        System.out.println("sub" +(a.show(23,45)));
+        System.out.println("multi" +(a.show(25.33f,45.34f)));
+        System.out.println("divide" +(a.show(23.56,34.67)));
+        System.out.println("modul" +(a.show(200000001,20000091)));
+    }
+}
+
+
+
+
+--------------------------------------------------
+method overloading 
+
+five methods same name but return type of parameter will be changed  
+addition
+substraction
+multi
+div 
+modu
+
+error
+problem solve 
+
+import java.util.*;
+class A{
+   void show(){
+   Scanner sc=new Scanner (System.in);
+       System.out.println("enter the value of a");
+       int a=sc.nextInt();
+       System.out.println("enter the value of b");
+       int b=sc.nextInt();
+       int c=a+b;
+       System.out.println(c);
+   }
+   void show(int a){
+   int b=45;
+   int c=a-b;
+       System.out.println("sub"+c);
+   }
+   void show(float a,float b){
+       float c=a*b;
+       System.out.println("mul"+c);
+   }
+   void show(double a,double b){
+       double c=a/b;
+       System.out.println("divi"+c);
+   }
+   void show(long a,long b){
+       long c=a%b;
+       System.out.println("multi"+c);
+   }
+}
+public class Main{
+    public static void main(String[] args){
+        A a=new A();
+        a.show();
+        a.show(23,67);
+        a.show(236.56,134.67);
+        a.show(200001,40003);
+    }
+}
+
+
+------------------------------------------------------------
+constructor overloading :
+
+class A constructor overloading :
+
+
+class B constructor overloading :
+
+
+class C constructor overloading :
+
+class Main :
+
+
+error 
+problem solve 
+import java.util.Scanner;
+class A{
+    A(){
+        int a=78;
+        int b=58;
+        int c=a+b;
+        System.out.println("add"+c);
+    }
+    A(int a){
+        int b=78;
+        int c=a-b;
+        System.out.println("sub" +c);
+    }
+}
+class B{
+    B(int a,int b){
+        int c=a*b;
+        System.out.println("div"+c);
+    }
+    B(float a){
+        float b=78.78f;
+        float c=a/b;
+        System.out.println("mod");
+    }
+}
+class C {
+    C(float a, float b) {
+        float c = a % b;
+        System.out.println(c);
+    }
+
+    C(double a) {
+        System.out.println("double value" + a);
+    }
+}
+    public class Main{
+        public static void main(String[] args){
+            new A();
+            new A(67);
+            new B(89,67);
+            new B(59,89);
+            new C(56.45f,78.46f);
+            new C(567.567);
+        }
+    }
+
+--------------------------------------------------
+single level inheritance :parameterised constructor 
+class A {
+    A(int a) {
+        int b=67;
+        int c=a+b;
+        System.out.println("add="+c);
+    }
+}
+
+class B extends A {
+    B(int a) {
+        super(67);
+        int b=97;
+        int c=a-b;
+        System.out.println("sub="+c);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        B p = new B(62);
+
+    }
+}
+-------------------------
+multi level inheritance :parameterised constructor 
+class A {
+    A(int a) {
+        int b=67;
+        int c=a+b;
+        System.out.println("add="+c);
+    }
+}
+
+class B extends A {
+    B(int a) {
+        super(67);
+        int b=97;
+        int c=a-b;
+        System.out.println("sub="+c);
+    }
+}
+class C extends B{
+    C(int a,int b){
+        super(78);
+        int c=a*b;
+        System.out.println("multiple="+c);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        C p = new C(89,88);
+
+    }
+}
+-------------------------
+heirarichal level inheritance :parameterised constructor 
+class A {
+    A(int a) {
+        int b=67;
+        int c=a+b;
+        System.out.println("add="+c);
+    }
+}
+
+class B extends A {
+    B(int a) {
+        super(67);
+        int b=97;
+        int c=a-b;
+        System.out.println("sub="+c);
+    }
+}
+class C extends A{
+    C(int a,int b){
+        super(78);
+        int c=a*b;
+        System.out.println("multiple="+c);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        C p = new C(89,88);
+        B b = new B(67);
+
+    }
+}
+
+-------------------------
