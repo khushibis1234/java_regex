@@ -1,0 +1,187 @@
+hoclass A :abs 
+	method :abs :no return and no argument 
+
+class B ex A 
+
+class Main 
+main method :access 
+
+abstract class A{
+      abstract void show();
+
+    }
+    class B extends A{
+       void show(){
+           int a=67;
+           System.out.println(a);
+       }
+    }
+    public class Main{
+    public static void main(String[] args){
+        B p=new B();
+        p.show();
+    }
+} 
+--------------------------------------------
+class A :abs 
+	method :abs : return and no argument 
+
+class B ex A 
+
+class Main 
+main method :access 
+
+--------------------------------------------
+class A :abs 
+	method :abs :no return and  argument 
+
+class B ex A 
+
+class Main 
+main method :access 
+
+--------------------------------------------
+class A :abs 
+	method :abs : return and  argument 
+
+class B ex A 
+
+class Main 
+main method :access 
+
+--------------------------------------------
+class A :abs 
+	method :abs : return and  argument 
+
+
+class Main ex A
+ main method :access 
+--------------------------------------------
+class College :abstract 
+	method1 :mid term exam :abstract :no return and no argument  
+	method2 :main term exam :abstract : return and no argument  
+
+	method3 :fairwell :abstract :no return and  argument  
+
+	method4 :fresherParty :abstract : return and  argument  
+
+
+class Students ex College 
+
+Main class :access 
+-------------------------------------------------------
+class A :abstract 
+	add() :no return and no argument :abstract 
+
+class B :abstract 
+	sub() :no return and  argument :abstract 
+
+
+class C :abstract 
+	div() : return and no argument :abstract 
+
+
+class D :abstract 
+	multi() : return and  argument :abstract
+
+class E
+
+class F
+
+class G
+
+class H
+extends one by one 
+
+class Main 
+main method access 
+------------------------------------------------------------ 
+class A :abstract 
+	add() :no return and no argument :abstract 
+
+class B :abstract 
+	sub() : return and  argument :abstract 
+
+class E ex B
+method 
+
+class F ex A
+method 
+
+class G ex E
+method 
+
+class H ex F 
+method 
+
+class Main 
+main method access 
+------------------------------------------------------------ 
+class College :abstract 
+	method1 :mid term exam :abstract :no return and no argument  
+	method2 :main term exam :non-abstract : return and no argument  
+
+	method3 :fairwell :abstract :no return and  argument  
+
+	method4 :fresherParty :non-abstract : return and  argument  
+
+
+class Students ex College 
+
+Main class :access 
+------------------------------------------------------
+class A :abstract 
+	method1 :non-abstract method :return and argument 
+	method 2 :abstract method :covariant 
+
+class B ex A
+method 
+
+class C ex B 
+method 
+
+class D ex A 
+method 
+
+class Main 
+main method access 
+------------------------------------------------------
+class A :abstract 
+	method:return and argument :non-abstract type 
+
+class B :abstract 
+	method:return and argument :abstract type 
+
+class C ex A
+
+class D ex B 
+
+Main :access 
+---------------------------------------------------
+class A :abstract 
+	method:return and argument :abstract type 
+
+class D ex A 
+
+Main :access 
+parent class object and child ka constructor call krna hey 
+---------------------------------------------------
+class A :abstract 
+	method:no return and argument :abstract type 
+
+class D ex A 
+
+Main :access 
+parent class object and child ka constructor call krna hey 
+
+---------------------------------------------------
+class A :abstract 
+	method:no return and no argument :abstract type 
+
+class D ex A 
+
+Main :access 
+parent class object and child ka constructor call krna hey 
+
+
+
