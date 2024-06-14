@@ -1,0 +1,731 @@
+1.class A :abs 
+	method :abs :no return and no argument 
+
+class B ex A 
+
+class Main 
+main method :access 
+
+abstract class A{
+    abstract void show();
+    void a1(){
+        System.out.println("class A");
+    }
+}
+class B extends A{
+    void show()
+    {
+        System.out.println("class B");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    System.out.println("class Main");
+		B b=new B();
+	    b.a1();
+		b.show();
+	}
+}
+
+--------------------------------------------
+2.class A :abs 
+	method :abs : return and no argument 
+
+class B ex A 
+
+class Main 
+main method :access 
+
+abstract class A{
+    abstract int show();
+}
+class B extends A{
+    int show()
+    {
+        return 45;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		B b=new B();
+		System.out.println("a="+(b.show()));
+	}
+}
+
+--------------------------------------------
+3.class A :abs 
+	method :abs :no return and  argument 
+
+class B ex A 
+
+class Main 
+main method :access 
+
+abstract class A
+{
+    abstract void show(int a,int b);
+}
+class B extends A{
+    void show(int a,int b)
+    {
+        System.out.println("a="+a);
+        System.out.println("b="+b);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    B b=new B();
+	    b.show(87,89);
+	}
+}
+--------------------------------------------
+4.class A :abs 
+	method :abs : return and  argument 
+
+class B ex A 
+
+class Main 
+main method :access 
+
+abstract class A{
+    abstract int show(int a,int b);
+}
+class B extends A{
+    int show(int a,int b)
+    {
+        System.out.println("a="+a);
+        System.out.println("b="+b);
+        int c=a+b;
+        return c;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		B b=new B();
+	    int s=b.show(80,120);
+	    System.out.println("sum="+s);
+	}
+}
+
+--------------------------------------------
+5.class A :abs 
+	method :abs : return and  argument 
+
+
+class Main ex A
+ main method :access 
+
+abstract class A
+{
+    abstract int show(int a,int b);
+}
+public class Main extends A
+{
+    int show(int a,int b){
+        System.out.println("a="+a);
+        System.out.println("b="+b); 
+        int c=a-b;
+        return c;
+    }
+	public static void main(String[] args) 
+	{
+		Main b=new Main();
+	    int s=b.show(800,620);
+	    System.out.println("sub="+s);
+	}
+}
+--------------------------------------------
+6.class College :abstract 
+	method1 :mid term exam :abstract :no return and no argument  
+	method2 :main term exam :abstract : return and no argument  
+
+	method3 :fairwell :abstract :no return and  argument  
+
+	method4 :fresherParty :abstract : return and  argument  
+
+
+class Students ex College 
+
+Main class :access 
+
+import java.util.*;
+abstract class College{
+    abstract void method1();
+    abstract int method2();
+    abstract void method3(int a);
+    abstract int method4(int x,int y);
+}
+class Student extends College{
+    void method1(){
+        System.out.println("mid term exam marks.");
+        Scanner sc=new Scanner(System.in);
+        System.out.print("hindi=");
+        int hindi=sc.nextInt();
+        System.out.print("english=");
+        int english=sc.nextInt();
+        System.out.print("maths=");
+        int maths=sc.nextInt();
+        System.out.print("computer=");
+        int computer=sc.nextInt();
+        int d=hindi+english+maths+computer;
+        System.out.println("total marks of mid term exam marks.-"+d);
+    }
+    int method2(){
+        System.out.println("main exam marks.");
+        Scanner sc=new Scanner(System.in);
+        System.out.print("hindi=");
+        int hindi=sc.nextInt();
+        System.out.print("english=");
+        int english=sc.nextInt();
+        System.out.print("maths=");
+        int maths=sc.nextInt();
+        System.out.print("computer=");
+        int computer=sc.nextInt();
+        int c=hindi+english+maths+computer;
+        return c;
+    }
+    void method3(int a){
+        System.out.println("fairwell entry fees="+a);
+    }
+    int method4(int x,int y){
+        System.out.println("fresherParty ticket price. "+x);
+        System.out.println("entry fees."+y);
+        int t=x+y;
+        return t;
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Student s=new Student();
+        s.method1();
+        System.out.println("total marks of main exam. "+(s.method2()));
+        s.method3(500);
+        System.out.println("Total payment of fresherParty."+(s.method4(500,300)));
+    }
+}
+-------------------------------------------------------
+7.class A :abstract 
+	add() :no return and no argument :abstract 
+
+class B :abstract 
+	sub() :no return and  argument :abstract 
+
+
+class C :abstract 
+	div() : return and no argument :abstract 
+
+
+class D :abstract 
+	multi() : return and  argument :abstract
+
+class E
+
+class F
+
+class G
+
+class H
+extends one by one 
+
+class Main 
+main method access 
+
+import java.util.*;
+abstract class A
+{
+    abstract void add();
+}
+abstract class B
+{
+    abstract void sub(int a,int b);
+}
+abstract class C
+{
+    abstract int div();
+}
+abstract class D
+{
+    abstract int multi(int x,int y);
+}
+class E extends A
+{
+    void add()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a.");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b.");
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("add="+c);
+    }
+}
+class F extends B
+{
+    void sub(int a,int b)
+    {
+        int c=a-b;
+        System.out.println("sub="+c);
+    } 
+}
+class G extends C
+{
+    int div()
+    {
+       Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a.");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b.");
+        int b=sc.nextInt();
+        int c=a/b;
+        return c;
+    }
+}
+class H extends D
+{
+    int multi(int a,int b)
+    {
+        int c=a*b;
+        return c;
+    } 
+}   
+   
+
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    E e=new E();
+	    e.add();
+	    F f=new F();
+	    f.sub(67,54);
+	    G g=new G();
+	    System.out.println("div="+(g.div()));
+	    H h=new H();
+	    System.out.println("multi="+(h.multi(45,78)));
+	}
+}
+------------------------------------------------------------ 
+8.class A :abstract 
+	add() :no return and no argument :abstract 
+
+class B :abstract 
+	sub() : return and  argument :abstract 
+
+class E ex B
+method 
+
+class F ex A
+method 
+
+class G ex E
+method 
+
+class H ex F 
+method 
+
+class Main 
+main method access 
+
+
+import java.util.*;
+
+abstract class A{
+    abstract void add();
+}
+abstract class B{
+    abstract int sub(int a,int b);
+}
+class E extends B{
+    int sub(int a,int b){
+        int c=a-b;
+        return c;
+    }
+}
+class F extends A{
+    void add(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a.");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b.");
+        int b=sc.nextInt();
+        int c=a+b;
+        System.out.println("add="+c);
+    }
+    
+}
+class G extends E{
+    void multi(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a.");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b.");
+        int b=sc.nextInt();
+        int c=a*b;
+        System.out.println("multiple="+c);
+    }
+}
+class H extends F{
+    void div(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a.");
+        int a=sc.nextInt();
+        System.out.println("enter the value of b.");
+        int b=sc.nextInt();
+        int c=a/b;
+        System.out.println("div="+c);
+    }
+}
+public class Main
+{
+	public static void main(String[] args)
+	{
+	    H h=new H();
+	    h.add();
+	    h.div();
+	    
+	    G g=new G();
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter the value of x");
+	    int x=sc.nextInt();
+	    System.out.println("enter the value of y");
+	    int y=sc.nextInt();
+	    System.out.println("sub="+(g.sub(x,y)));
+	    g.multi();
+	   
+	    
+	}
+}
+------------------------------------------------------------ 
+9.class College :abstract 
+	method1 :mid term exam :abstract :no return and no argument  
+	method2 :main term exam :non-abstract : return and no argument  
+
+	method3 :fairwell :abstract :no return and  argument  
+
+	method4 :fresherParty :non-abstract : return and  argument  
+
+
+class Students ex College 
+
+Main class :access 
+
+import java.util.*;
+
+abstract class College{
+    abstract void method1();
+    int method2(){
+        System.out.println("main exam marks.");
+        Scanner sc=new Scanner(System.in);
+        System.out.print("hindi=");
+        int hindi=sc.nextInt();
+        System.out.print("english=");
+        int english=sc.nextInt();
+        System.out.print("maths=");
+        int maths=sc.nextInt();
+        System.out.print("computer=");
+        int computer=sc.nextInt();
+        int c=hindi+english+maths+computer;
+        return c;
+    }
+    abstract void method3(int a);
+    int method4(int x,int y){
+        System.out.println("fresherParty ticket price. "+x);
+        System.out.println("entry fees."+y);
+        int t=x+y;
+        return t;
+    }
+}
+class Student extends College{
+    void method1(){
+        System.out.println("mid term exam marks.");
+        Scanner sc=new Scanner(System.in);
+        System.out.print("hindi=");
+        int hindi=sc.nextInt();
+        System.out.print("english=");
+        int english=sc.nextInt();
+        System.out.print("maths=");
+        int maths=sc.nextInt();
+        System.out.print("computer=");
+        int computer=sc.nextInt();
+        int d=hindi+english+maths+computer;
+        System.out.println("total marks of mid term exam marks.-"+d);
+    }
+    
+    void method3(int a){
+        System.out.println("fairwell entry fees="+a);
+    }
+    
+}
+public class Main
+{
+	public static void main(String[] args) {
+	  Student s=new Student();
+	  s.method1();
+	  System.out.println("total marks of main exam. "+(s.method2()));
+	  s.method3(500);
+	  System.out.println("Total payment of fresherParty."+(s.method4(500,300)));
+	  
+	}
+}
+
+------------------------------------------------------
+10.class A :abstract 
+	method1 :non-abstract method :return and argument 
+	method 2 :abstract method :covariant 
+
+class B ex A
+method 
+
+class C ex B 
+method 
+
+class D ex A 
+method 
+
+class Main 
+main method access 
+
+abstract class A{
+    abstract int method1(int a,int b);
+    abstract A method2();
+}
+class B extends A{
+    int method1(int a,int b){
+        int c=a+b;
+        return c;
+    }
+    A method2(){
+        int a=98;
+        int b=87;
+        int c=a-b;
+        System.out.println("sub="+c);
+        return this;
+    }
+}
+class C extends B{
+    void method3(){
+        System.out.println("class c");
+    }
+}
+class D extends A{
+    int method1(int a,int b){
+        int c=a*b;
+        return c;
+    }
+    A method2(){
+        int a=98;
+        int b=87;
+        int c=a/b;
+        System.out.println("div="+c);
+        return this;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		C c=new C();
+		System.out.println("add="+(c.method1(56,78)));
+		c.method2();
+		c.method3();
+		D d=new D();
+		System.out.println("add="+(d.method1(56,78)));
+		d.method2();
+	}
+}
+
+------------------------------------------------------
+11.class A :abstract 
+	method:return and argument :non-abstract type 
+
+class B :abstract 
+	method:return and argument :abstract type 
+
+class C ex A
+
+class D ex B 
+
+Main :access 
+
+import java.util.*;
+
+abstract class A{
+    int method1(int a,int b){
+        int c=a+b;
+        return c;
+    }
+}
+abstract class B {
+    abstract int method2(int x,int y);
+}
+class C extends A{
+    void method3(){
+        System.out.println("class C print");
+    }
+}
+class D extends B{
+    int method2(int x,int y){
+        int s=x-y;
+        return s;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    C c=new C();
+	    Scanner sc=new Scanner(System.in);
+	    System.out.print("a=");
+	    int a=sc.nextInt();
+	    System.out.print("b=");
+	    int b=sc.nextInt();
+	    System.out.println("add of a,b="+(c.method1(a,b)));
+	    c.method3();
+	    
+	    D d=new D();
+	    System.out.print("x=");
+	    int x=sc.nextInt();
+	    System.out.print("y=");
+	    int y=sc.nextInt();
+	    System.out.println("sub of x,y="+(d.method2(x,y)));
+	}
+}
+
+---------------------------------------------------
+12.class A :abstract 
+	method:return and argument :abstract type 
+
+class D ex A 
+
+Main :access 
+parent class object and child ka constructor call krna hey 
+
+import java.util.*;
+
+abstract class A{
+    abstract int method1(int a,int b);
+}
+class D extends A{
+    int method1(int a,int b){
+        int c=a+b;
+        return c;
+    }
+    D(){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the value of i.");
+        int i=sc.nextInt();
+        System.out.print("enter the value of j.");
+        int j=sc.nextInt();
+        int s=i-j;
+        System.out.println("sub="+s);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    D d=new D();
+	    Scanner sc=new Scanner(System.in);
+        System.out.print("enter the value of a.");
+        int a=sc.nextInt();
+        System.out.print("enter the value of b.");
+        int b=sc.nextInt();
+	    System.out.println("add="+(d.method1(a,b)));
+	
+	}
+}
+
+---------------------------------------------------
+13.class A :abstract 
+	method:no return and argument :abstract type 
+
+class D ex A 
+
+Main :access 
+parent class object and child ka constructor call krna hey 
+
+import java.util.*;
+
+abstract class A{
+    abstract void method1(int a,int b);
+     
+}
+class D extends A{
+    void method1(int a,int b){
+        int c=a*b;
+        System.out.println("multiple="+c);
+        
+    }
+   D(){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the value of i.");
+        int i=sc.nextInt();
+        System.out.print("enter the value of j.");
+        int j=sc.nextInt();
+        int s=i-j;
+        System.out.println("sub="+s);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    D d=new D();
+	    Scanner sc=new Scanner(System.in);
+        System.out.print("enter the value of a.");
+        int a=sc.nextInt();
+        System.out.print("enter the value of b.");
+        int b=sc.nextInt();
+	    d.method1(a,b);
+	}
+}
+
+
+---------------------------------------------------
+14.class A :abstract 
+	method:no return and no argument :abstract type 
+
+class D ex A 
+
+Main :access 
+parent class object and child ka constructor call krna hey 
+
+import java.util.*;
+
+abstract class A{
+    abstract void method1();
+     
+}
+class D extends A{
+    void method1(){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the value of a.");
+        int a=sc.nextInt();
+        System.out.print("enter the value of b.");
+        int b=sc.nextInt();
+        int c=a/b;
+        System.out.println("divide="+c);
+        
+    }
+   D(){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the value of i.");
+        int i=sc.nextInt();
+        System.out.print("enter the value of j.");
+        int j=sc.nextInt();
+        int s=i-j;
+        System.out.println("sub="+s);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    D d=new D();
+	    d.method1();
+	}
+}
+
