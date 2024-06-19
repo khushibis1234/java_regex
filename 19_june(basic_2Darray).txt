@@ -1,0 +1,50 @@
+13 21 153
+49 512 68
+712 84 96
+
+512 print 
+96 
+21 
+public class Main{
+    public static void main(String[] args){
+        int[][]a={{13,21,153},{49,512,68},{712,84,96}};
+        System.out.println(a[1][1]);
+        System.out.println(a[0][1]);
+        System.out.println(a[2][2]);
+    }
+}
+-------------------------------------------------------------
+13 21 153
+49 512 68
+712 84 96
+
+512 even 
+96 odd 
+21 odd 
+68 even 
+public class Main{
+    public static void main(String[] args){
+        int[][]a={{13,21,153},{49,512,68},{712,84,96}};
+        System.out.println(a[1][1]);
+        if(a[1][1]%2==0){
+            System.out.println("even");
+        }
+        System.out.println(a[2][2]);
+        if((a[2][2])%2!=0){
+            System.out.println("odd");
+        }
+        else{
+            System.out.println("please enter odd number");
+        }
+        System.out.println(a[0][1]);
+        if(a[0][1]%2!=0){
+            System.out.println("odd");
+        }
+        System.out.println(a[1][2]);
+        if((a[1][2])%2==0){
+            System.out.println("even");
+        }
+
+    }
+}
+-------------------------------------------------------------
