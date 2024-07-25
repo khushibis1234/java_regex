@@ -1,0 +1,195 @@
+class A
+	method 
+
+class B 
+	method 
+
+a)Exception 	uncheck 
+import java.util.*;
+class A{
+    void show()throws Exception {
+        System.out.println("child class");
+    }
+}
+class B extends A{
+    void show()throws ArithmeticException{
+        System.out.println("hy");
+            System.out.println("world");
+
+        }
+    }
+    public class Main{
+    public static void main(String[] args){
+        B p=new B();
+        p.show();
+    }
+    }
+
+b)Exception 	check 
+import java.util.*;
+class A{
+    void show()throws Exception {
+        System.out.println("child class");
+    }
+}
+class B extends A{
+    void show()throws IOException{
+        System.out.println("hy");
+            System.out.println("world");
+
+        }
+    }
+    public class Main{
+    public static void main(String[] args){
+        B p=new B();
+        p.show();
+    }
+    }
+
+c)uncheck      Exception
+import java.util.*;
+class A{
+    void show()throws ArithmeticException {
+        System.out.println("child class");
+    }
+}
+class B extends A{
+    void show()throws Exception{
+        System.out.println("hy");
+            System.out.println("world");
+
+        }
+    }
+    public class Main{
+    public static void main(String[] args){
+        B p=new B();
+        p.show();
+    }
+    }
+
+d)check      Exception
+import java.util.*;
+class A{
+    void show()throws IOException {
+        System.out.println("child class");
+    }
+}
+class B extends A{
+    void show()throws Exception{
+        System.out.println("hy");
+            System.out.println("world");
+
+        }
+    }
+    public class Main{
+    public static void main(String[] args){
+        B p=new B();
+        p.show();
+    }
+    }
+
+e)check 	check
+import java.util.*;
+class A{
+    void show()throws IOException {
+        System.out.println("child class");
+    }
+}
+class B extends A{
+    void show()throws IOException{
+        System.out.println("hy");
+            System.out.println("world");
+
+        }
+    }
+    public class Main{
+    public static void main(String[] args){
+        B p=new B();
+        p.show();
+    }
+    }
+
+f)uncheck	uncheck
+import java.util.*;
+class A{
+    void show()throws ArithmeticException {
+        System.out.println("child class");
+    }
+}
+class B extends A{
+    void show()throws ArithmeticException{
+        System.out.println("hy");
+            System.out.println("world");
+
+        }
+    }
+    public class Main{
+    public static void main(String[] args){
+        B p=new B();
+        p.show();
+    }
+    }
+
+g)check 	uncheck
+
+ import java.util.*;
+class A{
+    void show()throws IOException {
+        System.out.println("child class");
+    }
+}
+class B extends A{
+    void show() ArithmeticException{
+        System.out.println("hy");
+            System.out.println("world");
+
+        }
+    }
+    public class Main{
+    public static void main(String[] args){
+        B p=new B();
+        p.show();
+    }
+    }
+
+h)unchek 	check 
+import java.util.*;
+class A{
+    void show()throws IOException {
+        System.out.println("child class");
+    }
+}
+class B extends A{
+    void show()throws ArithmeticException{
+        System.out.println("hy");
+            System.out.println("world");
+
+        }
+    }
+    public class Main{
+    public static void main(String[] args){
+        B p=new B();
+        p.show();
+    }
+    }
+
+import java.util.*;
+class A{
+    void show()throws ArithmeticException {
+        System.out.println("child class");
+    }
+}
+class B extends A{
+    void show()throws IOException{
+        System.out.println("hy");
+            System.out.println("world");
+
+        }
+    }
+    public class Main{
+    public static void main(String[] args){
+        B p=new B();
+        p.show();
+    }
+    }
+
