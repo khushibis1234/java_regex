@@ -1,0 +1,557 @@
+1)int array 
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the size of int type array");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("enter the values");
+            a[i] = sc.nextInt();
+        }
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+}
+
+float array 
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size of ");
+        int size =sc.nextInt();
+        float a[] =new float[size];
+
+        for(int i=0;i<a.length;i++) {
+            System.out.println("enter the values");
+             a[i] = sc.nextFloat();
+        }
+        for(int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+        System.out.println();
+        System.out.println(a[2]);
+    }
+}
+
+String array 
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size of ");
+        int size = sc.nextInt();
+        String a[] = new String[size];
+
+        for(int i=0;i<a.length;i++) {
+            System.out.println("enter the values");
+             a[i] = sc.nextLine();
+        }
+        for(int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+       // System.out.println();
+        //System.out.println(a[2]);
+    }
+}
+char 
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size of ");
+        int size = sc.nextInt();
+        char a[] = new char[size];
+
+        for(int i=0;i<a.length;i++) {
+            System.out.println("enter the values");
+             a[i] = sc.next().charAt(0);
+        }
+        for(int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+       // System.out.println();
+        //System.out.println(a[2]);
+    }
+}
+
+long 
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size of ");
+        int size = sc.nextInt();
+        long a[] = new long[size];
+
+        for(int i=0;i<a.length;i++) {
+            System.out.println("enter the values");
+             a[i] = sc.nextLong();
+        }
+        for(int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+       // System.out.println();
+        //System.out.println(a[2]);
+    }
+}
+
+double 
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size of ");
+        int size = sc.nextInt();
+        double a[] = new double[size];
+
+        for(int i=0;i<a.length;i++) {
+            System.out.println("enter the values");
+             a[i] = sc.nextDouble();
+        }
+        for(int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+       // System.out.println();
+        //System.out.println(a[2]);
+    }
+}
+
+
+-----------------------------------------------------------
+1,2,3,4,5,6,7,8,9,10
+
+reverse of array 
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size of ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+
+        for(int i=0;i<a.length;i++) {
+            a[i]= sc.nextInt();
+        }
+        for(int i=a.length-1;i>=0;i--){
+            System.out.print(a[i]+" ");
+        }
+      
+    }
+}
+-----------------------------------------------------------
+1,2,3,4,5,6,7,8,9,10
+
+mid element 
+print which 
+mid element index 
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size of ");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+
+        for(int i=0;i<a.length;i++) {
+            a[i]= sc.nextInt();
+        }
+        for(int i=a.length/2;i>=0;i--){
+            System.out.print(a[i]+" at index "+i );
+         break;
+        }
+
+    }
+}
+-------------------------------------------------------------
+1,2,3,4,5,6,7,8,9,10
+
+mid element 
+first part and second part 
+
+output :
+1,2,3,4,5,10,9,8,7,6
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size");
+        int size=sc.nextInt();
+        int a[]=new int[size];
+
+        for(int i=0;i<a.length;i++){
+            System.out.println("enter the values of array");
+             a[i] = sc.nextInt();
+        }
+        for(int i=0;i<a.length/2;i++){
+            System.out.print(a[i]+" " );
+
+        }
+
+        for(int i=a.length-1;i>=a.length/2;i--){
+            System.out.print(a[i]+" ");
+        }
+
+     }
+}
+
+output :
+5,4,3,2,1,6,7,8,9,10 
+
+output :
+1,2,9,8,7,6,5,4,3,10
+
+sum all elements 
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size");
+        int size=sc.nextInt();
+        int a[]=new int[size];
+
+        for(int i=0;i<a.length;i++){
+            System.out.println("enter the values of array");
+             a[i] = sc.nextInt();
+        }
+        int sum=0;
+        for(int i=0;i<a.length;i++){
+
+            System.out.print(a[i]+" " );
+            sum=sum+a[i];
+
+
+        }
+        System.out.println(sum);
+   }
+}
+
+-------------------------------------------------------------
+even number in array : 
+1,2,3,4,5,6,7,8,9,10
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size");
+        int size=sc.nextInt();
+        int a[]=new int[size];
+
+        for(int i=0;i<a.length;i++){
+            System.out.println("enter the values of array");
+             a[i] = sc.nextInt();
+        }
+
+        for(int i=0;i<a.length;i++) {
+            if (a[i] % 2 == 0) {
+                System.out.print(a[i] + " ");
+
+            }
+        }
+     }
+}
+
+
+a)forward direction
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size");
+        int size=sc.nextInt();
+        int a[]=new int[size];
+
+        for(int i=0;i<a.length;i++){
+            System.out.println("enter the values of array");
+             a[i] = sc.nextInt();
+        }
+
+        for(int i=0;i<a.length;i++) {
+            if (a[i] % 2 == 0) {
+                System.out.print(a[i] + " ");
+
+            }
+        }
+        
+    }
+}
+
+b)backward direction 
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size");
+        int size=sc.nextInt();
+        int a[]=new int[size];
+
+        for(int i=0;i<a.length;i++){
+            System.out.println("enter the values of array");
+             a[i] = sc.nextInt();
+        }
+
+        for(int i=a.length/2;i>=0;i--) {
+            if (a[i] % 2 == 0) {
+                System.out.print(a[i] + " ");
+
+            }
+        }
+    }
+}
+
+c)mid element even
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size");
+        int size=sc.nextInt();
+        int a[]=new int[size];
+
+        for(int i=0;i<a.length;i++){
+            System.out.println("enter the values of array");
+             a[i] = sc.nextInt();
+
+        }
+
+        for(int i=a.length/2;i>=0;i--) {
+            if (a[i] % 2 == 0) {
+                System.out.print(a[i] + " ");
+                break;
+
+            }
+        }
+    }
+}
+
+
+d)
+mid element 
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the size");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("enter the values of array");
+            a[i] = sc.nextInt();
+        }
+        for (int i=a.length/2;i>=0; i--) {
+            System.out.print(a[i] + " ");
+            break;
+        }
+    }
+        }
+
+
+
+first and second part 
+2,3,4,5,6,7,8,9,10 
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the size");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("enter the values of array");
+            a[i] = sc.nextInt();
+        }
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+
+        }
+    }
+        }
+
+
+
+e)
+1,2,3,4,5,6,8,10 
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the size");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("enter the values of array");
+            a[i] = sc.nextInt();
+        }
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+
+        }
+    }
+        }
+
+
+
+
+f)even number count (total) 
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the size");
+        int size = sc.nextInt();
+        int a[] = new int[size];
+        int count=0;
+        for (int i = 0; i < a.length; i++) {
+            System.out.println("enter the values of array");
+            a[i] = sc.nextInt();
+count++;
+        }
+
+        System.out.println();
+        System.out.println(count);
+
+    }
+        }
+
+
+
+
+g)mid 
+first and second part 
+first even 
+second even 
+
+h)all even element index 
+
+i)sum all elements even number 
+
+j)mid 
+first part second part 
+first even number addition second part no change
+first even number  no change  second part addition
+ 
+-------------------------------------------------------------
+odd number in array : 
+1,2,3,4,5,6,7,8,9,10
+
+a)forward direction
+b)backward direction 
+c)mid element even
+
+d)
+mid element 
+first and second part 
+1,3,5,6,7,8,9,10
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the size");
+        int size=sc.nextInt();
+        int a[]=new int[size];
+
+        for(int i=0;i<a.length;i++){
+            System.out.println("enter the values of array");
+            a[i] = sc.nextInt();
+        }
+        for(int i=0;i<a.length/2;i++){
+            if(a[i]%2!=0) {
+                System.out.print(a[i] + " ");
+            }
+        }
+
+        for(int i=a.length-1;i>=a.length/2;i--) {
+            if (a[i] % 2 != 0) {
+                System.out.print(a[i] + " ");
+            }
+        }
+    }
+}
+
+e)
+1,2,3,4,5,7,9
+
+f)odd number count (total) 
+
+g)mid 
+first and second part 
+first odd
+second odd
+
+h)all odd element index 
+
+i)sum all elements odd number 
+
+j)mid 
+first part second part 
+first odd number addition second part no change
+first odd number  no change  second part addition
+
+-----------------------------------------------------
+array every element ki table print 
+1,2,3,4,5
+
+a)even number table 
+b)odd number table 
+-----------------------------------------------------
+every element factorial array 
+
+-----------------------------------------------------
+check array element palindrome 
+
+-----------------------------------------------------
+check array element Armstrong 
+
+-----------------------------------------------------
+user input array check target value present 
+
+a)index which 
+
+b)how much 
+
+c)which index with value 
+
+d)addition (sum of all target value ) 
+
+-----------------------------------------------------
+
+print through methods :
+
+int array 
+
+float array 
+
+String array 
+
+char 
+
+long 
+
+double 
+
+no return and argument 
+return and argument 
+
+-----------------------------------------------------
+a[]
+
+b[]=a
+
+c[]=b
+
+d[] =c
+a
+b
+c
+d
+
+
+

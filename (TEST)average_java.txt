@@ -1,0 +1,194 @@
+1)
+Problem Statement – Shiv planned to choose a four digit lucky number for his car. His
+lucky numbers are 3,5 and 7. Help him find the number, whose sum is divisible by 3 or 5 or
+7. Provide a valid car number, Fails to provide a valid input then display that number is not a
+valid car number.
+Note : The input other than 4 digit positive number[includes negative and 0] is considered as
+invalid.
+Refer the samples, to read and display the data.
+
+
+Sample Input 1:
+Enter the car no:1234
+Sample Output 1:
+Lucky Number
+
+
+Sample Input 2:
+Enter the car no:1214
+Sample Output 2:
+Sorry its not my lucky number
+
+
+Sample Input 3:
+Enter the car no:14
+Sample Output 3:
+14 is not a valid car number
+
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the car number :");
+        int num=sc.nextInt();
+        if(num>=1000 && num<=9999){
+            int rem,sum=0;
+            while(num>0){
+                rem=num%10;
+                sum=sum+rem;
+                num=num/10;
+            }
+            if(sum%3==0||sum%5==0||sum%7==0){
+                System.out.println("this is a lucky number");
+            }
+            else {
+                System.out.println("this is not a lucky number");
+            }
+        }
+        else {
+            System.out.println("not a valid input");
+        }
+    }
+
+}
+---------------------------------------------------------------
+
+2)
+Problem Statement – Rhea Pandey’s teacher has asked her to prepare well for the
+lesson on seasons. When her teacher tells a month, she needs to say the season
+corresponding to that month. Write a program to solve the above task.
+Spring – March to May,
+Summer – June to August,
+Autumn – September to November and,
+Winter – December to February.
+Month should be in the range 1 to 12. If not the output should be “Invalid month”.
+Sample Input 1:
+Enter the month:11
+Sample Output 1:
+Season:Autumn
+Sample Input 2:
+Enter the month:13
+Sample Output 2:
+Invalid month
+
+import java.util.*;
+public class Test {
+public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the months parameters :");
+    String name=sc.nextLine();
+    if(name.equals("march to may")){
+        System.out.println("spring");
+    }
+    else if(name.equals("september to november")){
+    System.out.println("autumn");
+    }
+    else if(name.equals("december to february")){
+        System.out.println("winter ");
+    }
+    else {
+        System.out.println("invalid");
+    }
+}
+    
+}
+---------------------------------------------------------
+3)
+Write a method that takes two parameters (int x and int y) and returns their sum.
+import java.util.*;
+public class Main {
+    int add(int x,int y){
+
+        int c=x+y;
+        System.out.println(c);
+        return c;
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the value of a and b ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        Main aj=new Main();
+        aj.add(a, b);
+    }
+
+}
+
+4)
+Create a method that checks whether a given number is even or odd.
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number :");
+        int num = sc.nextInt();
+        if (num % 2 == 0) {
+            System.out.println("even number");
+        } else {
+            System.out.println("odd");
+        }
+    }
+}
+
+5)
+Implement a method to calculate the factorial of a given number.
+import java.util.*;
+public class Main {
+    int fact(int a){
+
+        int fact=1;
+        for(int i=1;i<=a;i++){
+            fact=fact*i;
+        }
+        System.out.println("factorial : "+fact);
+
+        return a;
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the number :");
+        int a=sc.nextInt();
+        Main k=new Main();
+        k.fact(a);
+    }
+
+}
+
+6)
+Create a method that calculates the power of a number (x^y).
+ public class Main{
+    public static void main(String[] args) {
+        int base = 3, exponent = -4;
+        double result = Math.pow(base, exponent);
+
+        System.out.println( result);
+    }
+}
+
+
+7)
+Create a method that prints the Fibonacci series up to a given limit.
+
+8)
+Write a method to check if a given number  is a palindrome.
+Write a Java method called swapValues that takes two integer parameters and swaps their values
+
+9)
+Default Constructor:
+Write a Java class with a default constructor. Print a message inside the constructor to indicate that it has been called.
+
+import java.util.*;
+class A{
+    A(){
+        System.out.println("this is default costractor");
+    }
+    public static void main(String[] args) {
+        A k=new A();
+    }
+}
+
+
+10)
+Parameterized Constructor:
+Create a class with a parameterized constructor that takes two integers as parameters and initializes two instance variables.

@@ -30,6 +30,23 @@ class B ex A
 
 class Main 
 main method :access 
+abstract class A{
+    abstract int show();
+}
+class B extends A{
+    int show()
+    {
+        return 45;
+    }
+}
+public class Main
+{
+    public static void main(String[] args)
+    {
+        B b=new B();
+        System.out.println("a="+(b.show()));
+    }
+}
 
 --------------------------------------------
 class A :abs 
@@ -40,6 +57,22 @@ class B ex A
 class Main 
 main method :access 
 
+abstract class A{
+    abstract int show(int a);
+}
+class B extends A{
+    int show(int a) {
+        System.out.println(a);
+    }
+}
+public class Main
+{
+    public static void main(String[] args)
+    {
+        B b=new B();
+        System.out.println(78);
+    }
+}
 --------------------------------------------
 class A :abs 
 	method :abs : return and  argument 
@@ -48,6 +81,23 @@ class B ex A
 
 class Main 
 main method :access 
+abstract class A{
+    abstract int show(int a);
+}
+class B extends A{
+    int show(int a) {
+        System.out.println(a);
+        return a;
+    }
+}
+public class Main
+{
+    public static void main(String[] args)
+    {
+        B b=new B();
+        System.out.println(78);
+    }
+}
 
 --------------------------------------------
 class A :abs 
@@ -56,6 +106,25 @@ class A :abs
 
 class Main ex A
  main method :access 
+abstract class A
+{
+    abstract int show(int a,int b);
+}
+public class Main extends A
+{
+    int show(int a,int b){
+        System.out.println("a="+a);
+        System.out.println("b="+b);
+        int c=a-b;
+        return c;
+    }
+    public static void main(String[] args)
+    {
+        Main b=new Main();
+        int s=b.show(800,620);
+        System.out.println("sub="+s);
+    }
+}
 --------------------------------------------
 class College :abstract 
 	method1 :mid term exam :abstract :no return and no argument  
@@ -129,6 +198,61 @@ class College :abstract
 class Students ex College 
 
 Main class :access 
+import java.util.*;
+abstract class College{
+    abstract void method1();
+    abstract int method2();
+    abstract void method3(int a);
+    abstract int method4(int x,int y);
+}
+class Student extends College{
+    void method1(){
+        System.out.println("mid term exam marks.");
+        Scanner sc=new Scanner(System.in);
+        System.out.print("hindi=");
+        int hindi=sc.nextInt();
+        System.out.print("english=");
+        int english=sc.nextInt();
+        System.out.print("maths=");
+        int maths=sc.nextInt();
+        System.out.print("computer=");
+        int computer=sc.nextInt();
+        int d=hindi+english+maths+computer;
+        System.out.println("total marks of mid term exam marks.-"+d);
+    }
+    int method2(){
+        System.out.println("main exam marks.");
+        Scanner sc=new Scanner(System.in);
+        System.out.print("hindi=");
+        int hindi=sc.nextInt();
+        System.out.print("english=");
+        int english=sc.nextInt();
+        System.out.print("maths=");
+        int maths=sc.nextInt();
+        System.out.print("computer=");
+        int computer=sc.nextInt();
+        int c=hindi+english+maths+computer;
+        return c;
+    }
+    void method3(int a){
+        System.out.println("fairwell entry fees="+a);
+    }
+    int method4(int x,int y){
+        System.out.println("fresherParty ticket price. "+x);
+        System.out.println("entry fees."+y);
+        int t=x+y;
+        return t;
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Student s=new Student();
+        s.method1();
+        System.out.println("total marks of main exam. "+(s.method2()));
+        s.method3(500);
+        System.out.println("Total payment of fresherParty."+(s.method4(500,300)));
+    }
+}
 ------------------------------------------------------
 class A :abstract 
 	method1 :non-abstract method :return and argument 

@@ -1,0 +1,179 @@
+check target element greater than array: 
+16 27 32 41 5 
+
+target :32 
+which 
+which element + index 
+count //public class Main {
+
+public class Main{
+    public static void main(String[] args){
+        int a[]={16,32,41,5,};
+        int target=32;
+        int count=0;
+        for(int i=0;i<a.length;i++){
+            if (a[i] > target) {
+                System.out.println(" "+a[i]);
+                count++;
+                System.out.println(count);
+            }
+        }
+       }
+}
+-------------------------------------------------
+check target element less than array : 
+16 27 32 41 5 
+
+target :32 
+which 
+which element + index 
+count
+
+public class Main{
+    public static void main(String[] args){
+        int a[]={16,32,41,5,};
+        int target=32;
+        int count=0;
+        for(int i=0;i<a.length;i++){
+            if (a[i] < target) {
+                System.out.println(" "+a[i]);
+                count++;
+                System.out.println(count);
+            }
+        }
+
+
+
+    }
+} 
+----------------------------------------------
+maximum element : 
+
+index 
+------------------------------------------------
+minimum element : 
+index 
+------------------------------------------------
+a[]={1,2,3,4,5};
+b[]={1,2,3,4,5,}
+
+a+b 
+
+----------------------------------------------------
+duplicate element find through traversal : 
+
+which 
+index 
+count 
+
+----------------------------------------------------
+array :
+even index k element print krna hey 
+count 
+odd index k element print krna hey 
+count 
+
+----------------------------------------------------
+1,2,3,4,5,6,7,8,9,10 
+target :6 
+
+2,4
+1,5
+
+index print 
+element +index 
+count 
+----------------------------------------------------
+1,2,3,4,5,6,7,8,9,10 
+target :12 
+
+three number sum : 
+2 4 6 
+5 3 4 
+7 3 2 
+
+index print 
+element +index 
+count 
+
+------------------------------------------------------------
+find unique element : 
+index print 
+element +index 
+count 
+------------------------------------------------------------
+34,23,45,52,7
+
+a)sort 
+b)
+sort 
+square print 
+
+c)square print even 
+
+d)square print odd number index print krna hey  
+------------------------------------------------------------
+shallow copy :
+a[]
+b[]=a
+a :change 
+c[]=b
+a:change 
+b:change 
+d[] =c
+c:change 
+e[]=d
+d :change 
+
+deep copy :
+a[]
+b[]=a
+a :change 
+c[]=b
+a:change 
+b:change 
+d[] =c
+c:change 
+e[]=d
+d :change 
+
+
+------------------------------------------------------------
+swap element 
+first and last 
+
+swap element 
+first or mid 
+
+swap element 
+mid and last 
+
+swap element
+1,2,3,4,5,6,7,8,9,10
+
+5,2,3,1,10,7,8,9,6
+mid : 
+first part swap number
+second part 
+
+----------------------------------
+swap element 
+first even element swap with last element 
+----------------------------------
+check a character is vowel 
+index
+count 
+
+
+----------------------------------
+check a character is consonant  
+index
+count 
+
+----------------------------------
+check a character is vowel and consonant 
+index
+count 
+
+
+

@@ -1,0 +1,240 @@
+1)
+try :null pointer exception
+
+catch : handle 
+
+finally 
+public class Main{
+    public static void main(String[] args){
+        try{
+            String name=null;
+            System.out.println(name.length());
+        }
+        catch(NullPointerException ex){
+            System.out.println("null");
+        }
+        finally{
+            System.out.println("always run ");
+        }
+    }
+}
+
+2)
+try :null pointer exception
+
+catch : handle 
+
+finally 
+
+rest of code 
+public class Main{
+    public static void main(String[] args){
+        try{
+            String name=null;
+            System.out.println(name.length());
+        }
+        catch(NullPointerException ex){
+            System.out.println("null");
+        }
+        finally{
+            System.out.println("always run ");
+            System.out.println("rest of code");
+        }
+    }
+}
+
+3)
+try :null pointer exception
+
+catch : handle 
+
+finally 
+
+rest of code 
+
+used exit 
+public class Main{
+    public static void main(String[] args){
+        try{
+            String name=null;
+            System.out.println(name.length());
+        }
+        catch(NullPointerException ex){
+            System.out.println("null");
+
+        }
+
+        finally{
+            System.out.println("always run ");
+            System.exit(0);
+            System.out.println("rest of code");
+        }
+    }
+}
+
+4)
+try :number format exception 
+
+catch :null pointer 
+
+catch :Array index 
+
+finally 
+
+exit used 
+public class Main{
+    public static void main(String[] args){
+        try{
+            String a="abc";
+            int b= Integer.parseInt(a);
+            System.out.println(b);
+        }
+        catch(NullPointerException ex){
+            System.out.println("null");
+            System.exit(0);
+        }
+        catch(ArrayIndexOutOfBoundsException ex){
+            System.out.println("array");
+        }
+
+        finally{
+            System.out.println("always run ");
+
+            System.out.println("rest of code");
+        }
+    }
+}
+
+5)
+try :number format exception 
+
+catch :null pointer 
+
+catch :Array index 
+
+finally 
+
+exit used first catch 
+public class Main{
+    public static void main(String[] args){
+        try{
+           int a=9/0;
+            System.out.println(a);
+        }
+        catch(NullPointerException ex){
+            System.out.println("null");
+            System.exit(0);
+        }
+        catch(ArrayIndexOutOfBoundsException ex){
+            System.out.println("array");
+        }
+
+        finally{
+            System.out.println("always run ");
+
+            System.out.println("rest of code");
+        }
+    }
+}
+
+
+6)
+class A
+m() :number format exception
+
+n
+
+k
+
+p
+
+o 
+
+e 
+
+main method e ko call krna hey :handle exception 
+class A extends Exception{
+    void m(){
+        String a="abc";
+        int b=Integer.parseInt(a);
+        System.out.println(b);
+    }
+    void n(){
+        m();
+    }
+    void k(){
+        n();
+    }
+    void p(){
+        k();
+    }
+    void o(){
+        p();
+    }
+    void e(){
+        o();
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        try{
+        A o=new A();
+        o.e();
+        }
+        catch(Exception ex){
+            System.out.println("handle");
+        }
+    }
+}
+
+7)
+class A
+m() :number format exception
+
+n
+
+k
+
+p
+
+o 
+
+e :handle exception
+
+main method e ko call krna hey 
+class A extends Exception{
+    void m(){
+        String a="abc";
+        int b=Integer.parseInt(a);
+        System.out.println(b);
+    }
+    void n(){
+        m();
+    }
+    void k(){
+        n();
+    }
+    void p(){
+        k();
+    }
+    void o(){
+        p();
+    }
+    void e(){
+        try{
+            o();
+        }
+        catch(Exception ex){
+            System.out.println("handle");
+        }
+    }
+}
+public class Main{
+    public static void main(String[] args){
+
+        A o=new A();
+        o.e();
+
+        }
+    }
+

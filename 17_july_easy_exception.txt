@@ -1,0 +1,20 @@
+----------------------------------------------------------
+1:
+Create a Java program that uses the throws keyword to declare an exception being thrown from a method and handle it in the calling code.
+-----------------------------------------------------------------------
+*************************************************************************************************************8
+		MODERATE LEVEL 
+1:
+Write a Java program that reads an integer from the user and handles the InputMismatchException when the user enters a non-integer input.
+----------------------------------------------------------------
+2:
+Create a Java program that simulates a scenario where an IOException occurs while working with a file and handles it using a custom exception.
+---------------------------------------
+3:
+Create a Java program that defines a method to divide two numbers and handle ArithmeticException. Then, invoke this method and handle the exception in the calling code.
+-----------------------------------------------------
+4:
+Write a Java program that demonstrates the use of the try-catch-finally construct for exception handling. The program should read a file and print its content, and then close the file in the finally block.
+------------------------------------------------------------------------------------
+5:
+Create a Java program that defines a custom unchecked exception. Use this exception to handle a specific situation in the program.

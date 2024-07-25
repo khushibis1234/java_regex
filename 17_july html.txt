@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style17.css">
+</head>
+<body>
+    <div class="maindiv">
+
+    </div>
+    <h2 class="heading">this is second heading tag</h2>
+</body>
+</html>
+
+
+.maindiv{
+    height:400px;
+    width:400px;
+    background-color: rgb(250, 215, 236);
+}
+.maindiv:hover{
+height:200px;
+width:200px;
+border:solid green;
+
+}
+.heading:hover{
+    color:blue;
+    cursor:pointer;
+}
+
+    ------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .khushi::after{
+            content: "hii";
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style17.css"> -->
+</head>
+<body>
+  <h1 class="khushi">this is a heading</h1>
+</body>
+</html>
+===============================================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+
+    <div class="header">
+        <img src="logo-new.png" alt="">
+        <h1 class="heading1">SARKARI RESULT</h1>
+    </div>
+    <div class="navbar">
+    <button class="button">search</button>
+    <button class="button">select</button>
+
+    <button class="button">over</button>
+
+    <button class="button">rejected</button>
+
+    <button class="button">exit</button>
+    <button class="button">dafa ho jaa</button>
+
+        
+    </div>
+    <h1 class="kuchv" style="color: blue;">Sarkari Result : SarkariResult.Com Sarkari Naukri Latest Jobs Online Form at Sarkari Results 2024</h1>
+    <h2 class="hello" style="color: red"> Welcome to No. 1 Education Portal Sarkari Result 2024</h2>
+</body>
+</html>
+
+
+cssss---------------------
+*{
+    margin:0px;
+    padding:0px;
+}
+.header{
+    width:1010px;
+    height:200px;
+    background-color: #ab183d;
+    margin:auto;
+}
+.heading1{
+    position:absolute;
+    left:560px;
+    top:30px;
+    color:azure;
+}
+.navbar{
+    width:1010px;
+    height:65px;
+    background-color:black;
+    margin:auto;
+    border:2px;
+}
+.button{
+    height:70px;
+    width:150px;
+    background:color(black red green blue);
+    border:3px;
+}
+.kuchv{
+    text-align: center;
+    font-size:large;
+}
+.hello{
+    text-align: center;
+    font-size:large;
+}

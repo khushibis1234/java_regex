@@ -1,0 +1,339 @@
+1)
+try	
+	try :number 
+		try :null
+			try :arithmetic 
+			exception :arithmetic
+
+		exception :null pointer
+	expcetion:number format 
+excpetion :exception 
+
+
+
+public class Main
+{
+    public static void main(String[] args) {
+        try
+        {
+            try
+            {
+                String name ="abc";
+                int a =Integer.parseInt(name);
+
+                try
+                {
+                    String s ="";
+                    System.out.println(s.length());
+                    try
+                    {
+                        int n = 10/0;
+                    }
+                    catch (ArithmeticException ex)
+                    {
+                        System.out.println(ex);
+                    }
+                }
+                catch(ArithmeticException ex)
+                {
+                    System.out.println(ex);
+                }
+            }
+            catch (NumberFormatException ex)
+            {
+                System.out.println(ex);
+            }
+        }
+        catch(Exception ex)
+        {
+            System.out.println(ex);
+        }
+    }
+}
+----------------------------------------------------------
+
+2)
+class A 
+	method :
+		try	
+	try :number 
+		try :null
+			try :arithmetic 
+			exception :arithmetic
+		exception :null pointer
+	expcetion:number format 
+excpetion :exception 
+
+Main class :access 
+class A{
+    void ex(){
+        try{
+            try{
+                String a="abc";
+                int b=Integer.parseInt(a);
+                try{
+                    String name=null;
+                    System.out.println(name.length());
+                    try{
+                        int c=9/0;
+                        System.out.println(c);
+                    }
+                    catch(ArithmeticException ex){
+                        System.out.println("handle");
+                    }
+
+                }
+                catch(NullPointerException ex){
+                    System.out.println("null");
+                }
+            }
+            catch(NumberFormatException ex){
+                System.out.println("number");
+            }
+        }
+        catch(Exception ex){
+            System.out.println("correct it");
+        }
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        A b=new A();
+        b.ex();
+    }
+}
+-----------------------------------------------------------------
+
+3)
+try	
+	try :number 
+		try :null
+			try :arithmetic 
+			exception :arithmetic
+			rest of code 
+		exception :null pointer
+		rest of code 
+	expcetion:number format 
+	rest of code 
+excpetion :exception 
+rest of code 
+class A{
+    void ex(){
+        try{
+            try{
+                String a="abc";
+                int b=Integer.parseInt(a);
+                try{
+                    String name=null;
+                    System.out.println(name.length());
+                    try{
+                        int c=9/0;
+                        System.out.println(c);
+                    }
+                    catch(ArithmeticException ex){
+                        System.out.println("handle");
+                        System.out.println("rest of code");
+                    }
+
+                }
+                catch(NullPointerException ex){
+                    System.out.println("null");
+                    System.out.println("rest of code");
+                }
+            }
+            catch(NumberFormatException ex){
+                System.out.println("number");
+                System.out.println("rest of code");
+            }
+        }
+        catch(Exception ex){
+            System.out.println("correct it");
+            System.out.println("rest of code");
+        }
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        A b=new A();
+        b.ex();
+    }
+}
+----------------------------------------------------------
+
+4)
+try 
+	try :array index
+	catch :array index out of bound 
+	
+	try :number format 
+	catch :number format 
+
+	try :arithmetic 
+	catch :arithmetic 
+
+catch :Exception 
+public class Main {
+    public static void main(String[] args) {
+        try {
+            try {
+                int a[] = {1, 2, 3, 4, 5};
+                System.out.println(a[8]);
+            } catch (ArrayIndexOutOfBoundsException ex) {
+                System.out.println("array");
+            }
+            try{
+                String a = "abc";
+                int b = Integer.parseInt(a);
+            }
+            catch (NumberFormatException ex) {
+                System.out.println("number");
+            }
+            try {
+                int a = 8 / 0;
+                System.out.println(a);
+            } catch (ArithmeticException ex) {
+                System.out.println("arth");
+            }
+
+    }
+        catch (Exception ex) {
+            System.out.println("correct");
+        }
+}
+}
+-----------------------------------------
+5)
+try 
+	try :array index
+	catch :number format  
+	
+	try :number format 
+	catch :number format 
+
+	try :arithmetic 
+	catch :arithmetic 
+
+catch :Exception 
+rest of code 
+public class Main {
+    public static void main(String[] args) {
+        try {
+            try {
+                int a[] = {1, 2, 3, 4, 5};
+                System.out.println(a[8]);
+            }
+            catch (NumberFormatException ex) {
+                System.out.println("array");
+            }
+            try{
+                String a = "abc";
+                int b = Integer.parseInt(a);
+            }
+            catch (NumberFormatException ex) {
+                System.out.println("number");
+            }
+            try {
+                int a = 8 / 0;
+                System.out.println(a);
+            } catch (ArithmeticException ex) {
+                System.out.println("arth");
+            }
+
+    }
+        catch (Exception ex) {
+            System.out.println("correct");
+            System.out.println("rest of code");
+        }
+}
+}
+---------------------------------------------
+6)
+try 
+	try :array index
+	catch :array index  
+	
+	try :number format 
+	catch :arithmetic 
+
+	try :arithmetic 
+	catch :arithmetic 
+
+catch :Exception 
+rest of code 
+public class Main {
+    public static void main(String[] args) {
+        try{
+            try {
+                int a[] = {1, 2, 3, 4, 5};
+                System.out.println(a[8]);
+            }
+            catch (ArrayIndexOutOfBoundsException ex) {
+                System.out.println("array");
+            }
+            try{
+                String a = "abc";
+                int b = Integer.parseInt(a);
+            }
+            catch (ArithmeticException ex) {
+                System.out.println("number");
+            }
+            try {
+                int a = 8 / 0;
+                System.out.println(a);
+            } catch (ArithmeticException ex) {
+                System.out.println("arth");
+            }
+
+    }
+        catch (Exception ex) {
+            System.out.println("correct");
+            System.out.println("rest of code");
+        }
+}
+}
+-------------------------------------
+
+7)
+try 
+	try :array index
+	catch :number format  
+	
+	try :number format 
+	catch :number format 
+
+	try :arithmetic 
+	catch :Arrayindexoutofbound 
+
+catch :Exception 
+rest of code 
+public class Main {
+    public static void main(String[] args) {
+        try{
+            try {
+                int a[] = {1, 2, 3, 4, 5};
+                System.out.println(a[8]);
+            }
+            catch (NumberFormatException ex) {
+                System.out.println("array");
+            }
+            try{
+                String a = "abc";
+                int b = Integer.parseInt(a);
+            }
+            catch (NumberFormatException ex) {
+                System.out.println("number");
+            }
+            try {
+                int a = 8 / 0;
+                System.out.println(a);
+            } catch (ArrayIndexOutOfBoundsException ex) {
+                System.out.println("arth");
+            }
+
+    }
+        catch (Exception ex) {
+            System.out.println("correct");
+            System.out.println("rest of code");
+        }
+}
+}
