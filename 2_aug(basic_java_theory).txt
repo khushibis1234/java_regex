@@ -1,0 +1,194 @@
+1)
+What is the difference between JDK, JRE, and JVM?
+
+JDk=>
+1)Java Development Kit 
+2)it is used for software development.
+3)jre+toolkit
+
+JRE=>
+1)Java runtime environment
+2)it gives environment to code to run easily.
+3)jvm+library
+
+JVM=>
+1)java virtual vachine
+2)it is used for resuibilty of code
+3)internal functionality of java--class loader, bytecodeverifier, interpretor,garbage collector.
+
+2)
+What are the features of Java Programming Language?
+simple
+object-oriented
+portable
+robust
+architecural neutral
+platform-independent
+multithreading
+distributed
+dyanamic
+
+3)
+What do you understand by Java Virtual Machine (JVM)?
+java virtual machine
+It is a specification that provides runtime environment in which java bytecode can be executed.
+JVMs are available for many hardware and software platforms (i.e. JVM is platform dependent).
+
+4)
+What is the difference between a class and an object?
+A class is blueprint or a template that defines the properties of behaviour and object.
+An object is an instance of class that provide value. 
+
+5)
+What are Java’s primitive data types?
+int 
+char
+float
+long
+short
+double
+boolean
+
+
+
+6)
+Explain the concept of the main() method in Java.
+
+public static void main(String[]args)
+public:access modifier
+class:
+void:return type
+main:class name
+String:r
+[]:array
+args:argument
+
+7)
+What is Java?
+java is high level object oriented programming language.java is robust language and more secure language.
+it is the combination of class and object.
+class:set of templates
+object:real word entity
+
+8)
+What are the different types of variables in Java?
+local variable
+private instance variable
+
+9)
+What is the significance of the boolean data type in Java?
+condition declration :is it true or false?
+
+10)
+What are the different types of operators in Java?
+arithmetic operator
+assignment operator
+relational operator
+logical operator
+ternanry opeartor
+
+11)
+What are logical operators in Java?
+&&
+||
+
+12)
+Explain the difference between float and double in Java.
+float provide decial value 0.3f
+double also denotes decimal value 0.55d but it stores large value in compare to float.
+
+13)
+Explain the difference between assignment operator and comparison operator in Java.
+assignment operator:to assign values +-/*%
+comparison operator :to compare =>, =< , == ,!=, > , <
+
+14)
+What are the default values of the different primitive data types in Java?
+
+byte: 0
+short: 0
+int: 0
+long: 0L
+float: 0.0f
+double: 0.0d
+char: '\u0000'(unicode)
+boolean: false
+
+15)
+How do relational operators work in Java?
+==
+=>
+<=
+!=
+>
+<
+
+16)
+What is Object-Oriented Programming (OOP)?
+oops is object poriented programming language, and it is also known as paradignm.
+paradignm=to perform specific task.
+
+17)
+What are the main principles of OOP?
+encapsulation
+inheritance
+polymorphism
+abstraction
+
+18)
+What is a class in Java?
+variables that hold data and state of an object.
+19)
+What is the difference between a class and an object?
+class:it is known as a template
+object:real word entity
+
+20)
+Can you explain the concept of method overloading?
+number of parameters is change 
+
+21)
+Can you explain the concept of method overriding?
+class name same method name different
+
+22)
+What is an interface?
+
+23)
+What is aggregation?
+
+24)
+What is the difference between aggregation and composition?
+
+
+25)
+What are design patterns?
+Creational Patterns: Focus on how objects are created. Examples: Singleton, Factory Method.
+
+Structural Patterns: Deal with object composition and class relationships. Examples: Adapter, Decorator.
+
+Behavioral Patterns: Concerned with object interactions and responsibilities. Examples: Observer, Strategy.
+
+26)
+How do you achieve polymorphism in Java?
+method overriding
+method overloading
+
+
+27)
+What are static methods and static variables?
+A static method is a method that belongs to the class rather than to any specific instance of the class. It can be called on the class itself rather than on instances of the class.
+
+A static variable, also known as a class variable, is a variable that is shared among all instances of a class. It belongs to the class itself, rather than to any specific instance of the class.
+
+28)
+What is the difference between a default constructor and a parameterized constructor?
+default provides as a default value of constructor
+in parameterised developer provide variales
+
+29)What is the role of constructors in a class?
+Constructors are used to set initial values for the fields of an object. They ensure that the object starts its life in a consistent and valid state.
+
+
+30)What is the Singleton pattern?
+System.out.println();
