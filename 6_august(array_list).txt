@@ -1,0 +1,39 @@
+ArrayList :
+
+heterogenous data stored 
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        ArrayList al=new ArrayList();
+        al.add("hello");
+        al.add(34);
+        al.add(2.34f);
+        System.out.println(al);
+    }
+}
+
+-----------------------------------------------------
+ArrayList :
+
+homogenous data stored :
+used wrapper classes in java 
+Integer | Character | String | Byte | Short | Float | Boolean |Long | Double 
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        ArrayList <Integer>al=new ArrayList();
+        ArrayList <Character>q=new ArrayList();
+        ArrayList <String>w=new ArrayList();
+        ArrayList <Float>e=new ArrayList();
+        w.add("hello");
+        al.add(34);
+        e.add(2.34f);
+        q.add('c');
+        System.out.println(al);
+        System.out.println(e);
+        System.out.println(q);
+        System.out.println(w);
+    }
+}
+
+-----------------------------------------------------
