@@ -1,0 +1,383 @@
+class A 
+	static instance variables 
+	String 
+	int 
+	char
+	float 
+	non-static method print 
+
+class Main :
+access
+import java.util.*;
+ class A {
+     static int a = 2;
+     static float g = 3.2f;
+     static char v = 'c';
+     static String s = "hello world";
+
+     void print() {
+         System.out.println(a);
+         System.out.println(g);
+         System.out.println(v);
+         System.out.println(s);
+     }
+ }
+ public class Main{
+     public static void main(String[] args){
+       A x = new A();
+       x.print();
+
+     }
+ }
+---------------------------------------------
+class A
+	static method :no return and no argument 
+
+class Main 
+	static method :no return and  argument 
+
+main method :access `
+class A{
+    static void method(){
+        int a=8;
+        int b=2;
+        int c=a-b;
+        System.out.println(c);
+    }
+}
+public class Main{
+    static void method1(int a,int b){
+        int c=a+b;
+        System.out.println(c);
+    }
+
+public static void main(String[] args) {
+    A.method();
+    method1(3, 8);
+}
+}
+------------------------------------------------------
+class A
+	static method :no return and no argument 
+class B
+	static method : return and no argument 
+class C
+	static method :no return and  argument 
+class D
+	static method :return and  argument 
+	
+class Main 
+	static method :no return and  argument 
+
+main method :access 
+
+
+class A{
+    static void method(){
+        int a=6;
+        int b=8;
+        int c=a+b;
+        System.out.println(c);
+    }
+}
+class B{
+    static int method2(){
+        int a=6;
+        int b=4;
+        int c=a+b;
+        System.out.println(c);
+        return c;
+    }
+}
+class C{
+    static void method3(int a,int b){
+        int c=a-b;
+        System.out.println(c);
+    }
+}
+class D{
+    static int method4(int a,int b){
+        int c=a+b;
+        System.out.println(c);
+        return c;
+
+    }
+}
+public class Main{
+    static void method5(int a,int b){
+        int c=a+b;
+        System.out.println(c);
+    }
+
+public static void main(String[] args) {
+    A.method();
+    B.method2();
+    C.method3(5, 4);
+    D.method4(3, 8);
+    method5(4,7);
+}
+
+}
+--------------------------------------------------
+single level inheritance 
+multilevel inheritance 
+heirarichal inheritance 
+
+class A
+	static method :no return and no argument 
+class B
+	static method : return and no argument 
+class C
+	static method :no return and  argument 
+class D
+	static method :return and  argument 
+class Main 
+	static method :no return and  argument 
+
+main method :access 
+class A{
+    static void main(){
+        int a=4;
+        int b=4;
+        int c=a+b;
+        System.out.println(c);
+
+    }
+}
+class B extends A{
+    public B()
+    {
+        super.main();
+    }
+    static void main1(){
+        int a=4;
+        int b=4;
+        int c=a-b;
+        System.out.println(c);
+    }
+}
+class C extends B{
+    public C()
+    {
+        super.main1();
+    }
+    static void main2(){
+        int a=4;
+        int b=4;
+        int c=a*b;
+        System.out.println(c);
+    }
+}
+class D extends C{
+    public D()
+    {
+        super.main2();
+    }
+    static void main3(){
+
+        int a=4;
+        int b=4;
+        int c=a%b;
+        System.out.println(c);
+
+    }
+}
+public class Main{
+    static void method(int a,int b){
+        int c=a+b;
+        System.out.println(c);
+    }
+    public static void main(String[] args){
+        D k= new D();
+        k.main3();
+        method(4,3);
+
+    }
+}
+--------------------------------------------------
+class A
+	instance variable :non-static 
+	static method :no return and no argument 
+
+class Main 
+	instance variable :non-static 
+	static method :no return and  argument 
+
+main method :access 
+
+then solve the error 
+class A{
+    int instanceVariableA;
+    A(int value){
+        this.instanceVariableA=value;
+
+    }
+    static void methodA(){
+        System.out.println("static method no return and argument");
+    }
+
+}
+public class Main {
+    int instanceVariableMain;
+
+    Main(int value) {
+        this.instanceVariableMain = value;
+    }
+
+    static void methodA() {
+        System.out.println("static method2");
+    }
+
+    public static void main(String[] args) {
+        A.methodA();
+
+
+        Main mainInstance = new Main(100);
+        System.out.println("Instance variable from Main: " + mainInstance.instanceVariableMain);
+
+
+    }
+}
+
+--------------------------------------------
+
+class A
+	instance variable :static 
+	static method :no return and no argument 
+class B
+	instance variable :static 
+	static method : return and no argument 
+class C
+	instance variable :static 
+	static method :no return and  argument 
+class D
+	instance variable :static 
+	static method :return and  argument 
+	
+class Main 
+	instance variable :static 
+	static method :no return and  argument 
+
+main method :access 
+
+--------------------------------------------------
+single level inheritance 
+multilevel inheritance 
+heirarichal inheritance 
+
+
+class A
+	instance variable :static 
+	static method :no return and no argument 
+class B
+	instance variable :static 
+	static method : return and no argument 
+class C
+	instance variable :static 
+	static method :no return and  argument 
+class D
+	instance variable :static 
+	static method :return and  argument 
+	
+class Main 
+	instance variable :static 
+	static method :no return and  argument 
+
+main method :access 
+
+--------------------------------------------------
+class A
+	default constructor 
+	anonymous block 
+	static block 
+
+Main :access 
+------------------------------------------------
+class A
+anonymous block 
+static block 
+	default constructor 
+	
+	
+
+Main :access 
+------------------------------------------------
+class A
+	anonymous block 
+	default constructor 
+	static block 
+
+Main :access 
+------------------------------------------------
+class A 
+	static block 
+
+class Main :access
+-------------------------------------------------
+class A 
+	class B
+	method :return and argument 
+
+class Main 
+	class C 
+	method :covariant return type 
+
+main method :access 
+---------------------------------------------------------
+
+class A 
+	class B
+	method :return and argument 
+	
+	class F 
+	method :no return and argument 
+
+	class O 
+	method : return and no argument 
+
+class Main 
+	class C 
+	method :covariant return type 
+
+main method :access 
+--------------------------------------------------------	
+nested static 
+1)outer class non static and inner class static and method  static : 
+
+2)outer class non  static and inner class non static and method  static : 
+
+3)outer class  non static and inner class static and method  non static : 
+
+4)outer class  non static and inner class static and method  non static :
+
+5)
+class A 
+	static class B static method 
+	static class C static method 
+
+6)outer class  non static and inner class static and method  non static and instance variable static 
+
+
+7)
+outer class  non static and inner class static and method  non static and instance variable non static 
+
+8)
+outer class  non static and inner class non static and method  non static and instance variable non static 
+
+9)
+class A 
+	non static class B non static method 
+	non static class C static method 
+
+10)
+class A 
+	static class B static method and instance variable non static 
+
+	static class C static method and instance variable non static 
+
+11)
+class A 
+	static class B static method and instance variable  static 
+
+	static class C static method and instance variable  static 
+------------------------------------------------------------
